@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px red;*/
+}
+@font-face {
+    font-family: 'Audiowide-Regular' ;
+    src: url(./../Audiowide-Regular.ttf);
+}
+  header {
+   background-color: #E3E6EF ;
+   color: black;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  header nav a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-family: 'Audiowide-Regular';
+  }
+
+  header nav a:hover {
+    color: #64C7D0;
+    
+  }
+
+  header a h1 {
+    color: #64C7D0;
+    font-family: 'Audiowide-Regular';
+  }
+  header a{
+    text-decoration: none;
+  }
+  header #font i {
+    padding: 10px;
+    position: relative; 
+    display: inline-block;
+    color: #64C7D0;
+  }
+
+  #text h1,
+  #text h2{
+    font-family: 'Audiowide-Regular';
+  }
+
+  #text p {
+    font-size: large;
+  }
+
+  #text {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #E3E6EF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #text section {
+    margin-top: 10px;
+  }

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px red;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(white, #5F11E8);
+}
+@font-face {
+    font-family: 'Audiowide-Regular' ;
+    src: url(./../Audiowide-Regular.ttf);
+}
+
+header {
+    background-color: #5F11E8;
+    color: black;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header nav h1 {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: 'Audiowide-Regular';   
+}
+
+  
+
+header a h1 {
+    color: white;
+    font-family: 'Audiowide-Regular';
+}
+header a{
+    text-decoration: none;
+}
+header #font i {
+    padding: 10px;
+    position: relative; 
+    display: inline-block;
+    color: white;
+}
+
+main {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #E3E6EF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main div h1, main div h2{
+    font-family: 'Audiowide-Regular';
+    font-size: large;
+}
+
+footer {
+    bottom: 0;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+    margin: 10px
+}
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 0.5sS;
+}
