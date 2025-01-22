@@ -27,24 +27,71 @@
                 <!--<p class="texte-cache">Forum</p>-->
             </div>
         </header>
-        <nav>
+        <nav id="menu">
             <h1>HTML</h1>
-            <ul>
-                <li>Structure de base d'une page HTML</li>
-                <li>Les balises HTML</li>
-                <li>Les attributs</li>
-                <li>Les Formulaires</li>
-                <li>Les Tables</li>
+            <ul id="ul1">
+                <li><a href="#base">Structure de base</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#head">La pratie "head"</a></li>
+                    <li><a href="#body">La partie "body"</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Les balises HTML</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#">Balises de titre</a></li>
+                    <li><a href="#">Balise de paragraphe</a></li>
+                    <li><a href="#">Balise de lien</a></li>
+                    <li><a href="#">Balise d'image</a></li>
+                    <li><a href="#">Balises de liste</a></li>
+                    <li><a href="#">Balises de formulaire</a></li>
+                    <li><a href="#">Balises de tableau</a></li>
+                    <li><a href="#">Balises sémantiques</a></li>
+                </ul>
+                </li>
+                <li><a href="#" >Les attributs</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#">Attributs communs</a></li>
+                    <li><a href="#">Attributs spécifiques à certaines balises</a></li>
+                    <li><a href="#">Attributs globaux</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#" >Les Formulaires</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#">Structure de base d'un formulaire</a></li>
+                    <li><a href="#">Attributs importants de la balise "form"</a></li>
+                    <li><a href="#">Types d'éléments de formulaire</a></li>
+                    <li><a href="#">Attributs des éléments de formulaire</a></li>
+                </ul>
+                </li>
+                <li><a href="#" >Les Tables</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#">Structure de base d'un tableau</a></li>
+                    <li><a href="#">Balises et attributs des tableaux</a></li>
+                    <li><a href="#">Sous-éléments de tableau</a></li>
+                    <li><a href="#">Mise en forme des tableaux</a></li>
+                </ul>
+                </li>
             </ul>
         </nav>
+        <script>
+            document.querySelectorAll('.grosTitre').forEach(button => {
+                button.addEventListener('click', function() {
+                    const ul2 = this.nextElementSibling;
+                    ul2.classList.toggle('open');
+                    const icon = this.querySelector('.rotate-icon');
+                    icon.classList.toggle('rotated');
+                });
+            });
+        </script>
         <main>
             <div id="intro">
                 <h1>Introduction a l'HTML</h1>
-                <p>HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il est utilisé pour structurer le contenu sur le web et il est composé d'éléments qui définissent différentes parties d'une page.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il est utilisé pour structurer le contenu sur le web et il est composé d'éléments qui définissent différentes parties d'une page.</p>
             </div>
             <div id="base">
                 <h2>1. Structure de base d'une page HTML</h2>
-                <p>Chaque document HTML commence par une déclaration de type :<pre><code>&lt;!DOCTYPE html&gt;</code></pre> Cette déclaration indique au navigateur que nous utilisons HTML5. Voici la structure de base d'une page HTML :</p>
+                <p>Chaque document HTML commence par une déclaration de type :</p><pre><code>&lt;!DOCTYPE html&gt;</code></pre><p>Cette déclaration indique au navigateur que nous utilisons HTML5. Voici la structure de base d'une page HTML :</p>
                 <pre><code>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
@@ -56,6 +103,69 @@
                         &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
+                </code></pre>
+            </div>
+            <div id="head">
+                <h3>La partie &lt;head&gt;</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;head&gt; contient des méta-informations sur le document. Ces informations ne sont pas affichées directement sur la page mais sont cruciales pour les moteurs de recherche, les navigateurs et autres services web. Voici quelques éléments courants dans la balise &lt;head&gt; :</p>
+                <br>
+                <p><span class="highlight">&lt;title&gt; :</span> Le titre de la page, affiché dans l'onglet du navigateur.</p>
+                <pre><code>
+                    &lt;title&gt;Ma première page HTML&lt;/title&gt;
+                </code></pre>
+                <p><span class="highlight">&lt;meta&gt; :</span> Les balises meta fournissent des informations telles que le jeu de caractères utilisé, l'auteur de la page, ou des mots-clés pour les moteurs de recherche.
+                </p>
+                <pre><code>
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="description" content="Une introduction au HTML"&gt;
+                    &lt;meta name="keywords" content="HTML, débutant, tutoriel"&gt;
+                    &lt;meta name="author" content="Votre Nom"&gt;
+                </code></pre>
+                <p><span class="highlight">&lt;link&gt; :</span> Utilisée pour lier des feuilles de style externes, comme CSS.</p>
+                <pre><code>
+                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                </code></pre>
+                <p><span class="highlight">&lt;script&gt; :</span> Pour inclure des scripts JavaScript.
+                </p>
+                <pre><code>
+                    &lt;script src="script.js"&gt;&lt;/script&gt;
+                </code></pre>
+            </div>
+            <div id="body">
+                <h3>La partie &lt;body&gt;</h3>
+                <p>La balise &lt;body&gt; contient tout le contenu visible de la page, tel que les textes, images, vidéos, et autres éléments que les utilisateurs voient et interagissent avec. Voici quelques exemples d'éléments que l'on peut trouver dans la balise &lt;body&gt; :</p>
+                <br>
+                <p><span class="highlight">Titres et paragraphes :</span> Les titres sont définis par les balises &lt;h1&gt; à &lt;h6&gt;, et les paragraphes par la balise &lt;p&gt;.</p>
+                <pre><code>
+                    &lt;h1&gt;Bienvenue dans le monde du HTML!&lt;/h1&gt;
+                    &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+                </code></pre>
+                <p><span class="highlight">Liens : </span>Créés avec la balise &lt;a&gt;.</p>
+                <pre><code>
+                    &lt;a href="https://example.com">Cliquez ici&lt;/a&gt;
+                </code></pre>
+                <p><span class="highlight">Images :</span> Incluses avec la balise &lt;img&gt;.</p>
+                <pre><code>
+                    &lt;img src="image.jpg" alt="Description de l'image"&gt;
+                </code></pre>
+                <p><span class="highlight">Listes :</span> Listes non ordonnées avec &lt;ul&gt; et listes ordonnées avec &lt;ol&gt;, chaque élément de liste étant défini par &lt;li&gt;.</p>
+                <pre><code>
+                    &lt;ul&lt;
+                        &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
+                        &lt;li&gt;Autre élément&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Premier élément&lt;/li&gt;
+                        &lt;li&gt;Deuxième élément&lt;/li&gt;
+                    &lt;/ol&lt;
+                </code></pre>
+                <p><span class="highlight">Formulaires :</span> Utilisés pour collecter des données utilisateur.</p>
+                <pre><code>
+                    &lt;form action="/submit" method="post"&gt;
+                        &lt;label for="nom"&gt;;Nom :&lt;/label&gt;
+                        &lt;input type="text" id="nom" name="nom"&gt;
+                        &lt;input type="submit" value="Envoyer"&gt;
+                    &lt;/form&gt;
                 </code></pre>
             </div>
         </main>
