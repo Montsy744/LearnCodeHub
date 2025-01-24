@@ -65,7 +65,14 @@ header #font i:hover {
     transform: translateX(-50px); 
 }*/
 
-
+#intro p, #intro h2, #intro a, #image img {
+    animation: grow 1s;
+}
+  
+@keyframes grow {
+    0% { transform: scale(.2); }
+    100% { transform: scale(1); }
+}
 #intro {
   
     display: grid;

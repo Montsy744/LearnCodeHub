@@ -36,16 +36,16 @@
                     <li><a href="#body">La partie "body"</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Les balises HTML</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <li><a href="#balise">Les balises HTML</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
                 <ul class="ul2">
-                    <li><a href="#">Balises de titre</a></li>
-                    <li><a href="#">Balise de paragraphe</a></li>
-                    <li><a href="#">Balise de lien</a></li>
-                    <li><a href="#">Balise d'image</a></li>
-                    <li><a href="#">Balises de liste</a></li>
-                    <li><a href="#">Balises de formulaire</a></li>
-                    <li><a href="#">Balises de tableau</a></li>
-                    <li><a href="#">Balises sémantiques</a></li>
+                    <li><a href="#titre">Balises de titre</a></li>
+                    <li><a href="#paragraphe">Balise de paragraphe</a></li>
+                    <li><a href="#lien">Balise de lien</a></li>
+                    <li><a href="#image">Balise d'image</a></li>
+                    <li><a href="#list">Balises de liste</a></li>
+                    <li><a href="#formulaire">Balises de formulaire</a></li>
+                    <li><a href="#tableau">Balises de tableau</a></li>
+                    <li><a href="#sementique">Balises sémantiques</a></li>
                 </ul>
                 </li>
                 <li><a href="#" >Les attributs</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
@@ -72,6 +72,7 @@
                     <li><a href="#">Mise en forme des tableaux</a></li>
                 </ul>
                 </li>
+                <li><a href="#lienUtile">Liens utiles</a></li>
             </ul>
         </nav>
         <script>
@@ -87,7 +88,7 @@
         <main>
             <div id="intro">
                 <h1>Introduction a l'HTML</h1>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il est utilisé pour structurer le contenu sur le web et il est composé d'éléments qui définissent différentes parties d'une page.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;L'HTML (HyperText Markup Language) est un langage informatique utilisé pour structurer et présenter du contenu sur le web. Créé en 1991 par Tim Berners-Lee, l'HTML est l'un des composants fondamentaux de l'Internet, permettant aux développeurs de créer des sites web interactifs et accessibles.</p>
             </div>
             <div id="base">
                 <h2>1. Structure de base d'une page HTML</h2>
@@ -104,71 +105,188 @@
                     &lt;/body&gt;
                     &lt;/html&gt;
                 </code></pre>
+                <p>Le code ci-dessus crée une page web avec un titre "Bienvenue sur Mon Site Web!" et un paragraphe expliquant l'utilisation de l'HTML. Les navigateurs web interprètent le code HTML pour afficher la page de manière compréhensible pour les utilisateurs.
+
+                    L'HTML est souvent utilisé en combinaison avec d'autres technologies comme le <a href="./courCSS.html">CSS</a> (Cascading Style Sheets) pour la mise en forme et le <a href="./courJavaScript.html">JavaScript</a> pour l'interactivité. Ensemble, ces outils permettent de créer des sites web riches, dynamiques et esthétiques.</p>
+                <div id="head">
+                    <h3>La partie &lt;head&gt;</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;head&gt; contient des méta-informations sur le document. Ces informations ne sont pas affichées directement sur la page mais sont cruciales pour les moteurs de recherche, les navigateurs et autres services web. Voici quelques éléments courants dans la balise &lt;head&gt; :</p>
+                    <br>
+                    <p><span class="highlight">&lt;title&gt; :</span> Le titre de la page, affiché dans l'onglet du navigateur.</p>
+                    <pre><code>
+                        &lt;title&gt;Ma première page HTML&lt;/title&gt;
+                    </code></pre>
+                    <p><span class="highlight">&lt;meta&gt; :</span> Les balises meta fournissent des informations telles que le jeu de caractères utilisé, l'auteur de la page, ou des mots-clés pour les moteurs de recherche.
+                    </p>
+                    <pre><code>
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="description" content="Une introduction au HTML"&gt;
+                        &lt;meta name="keywords" content="HTML, débutant, tutoriel"&gt;
+                        &lt;meta name="author" content="Votre Nom"&gt;
+                    </code></pre>
+                    <p><span class="highlight">&lt;link&gt; :</span> Utilisée pour lier des feuilles de style externes, comme CSS.</p>
+                    <pre><code>
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    </code></pre>
+                    <p><span class="highlight">&lt;script&gt; :</span> Pour inclure des scripts JavaScript.
+                    </p>
+                    <pre><code>
+                        &lt;script src="script.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                </div>
+                <div id="body">
+                    <h3>La partie &lt;body&gt;</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;body&gt; contient tout le contenu visible de la page, tel que les textes, images, vidéos, et autres éléments que les utilisateurs voient et interagissent avec. Voici quelques exemples d'éléments que l'on peut trouver dans la balise &lt;body&gt; :</p>
+                    <br>
+                    <p><span class="highlight">Titres et paragraphes :</span> Les titres sont définis par les balises &lt;h1&gt; à &lt;h6&gt;, et les paragraphes par la balise &lt;p&gt;.</p>
+                    <pre><code>
+                        &lt;h1&gt;Bienvenue dans le monde du HTML!&lt;/h1&gt;
+                        &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+                    </code></pre>
+                    <p><span class="highlight">Liens : </span>Créés avec la balise &lt;a&gt;.</p>
+                    <pre><code>
+                        &lt;a href="https://example.com">Cliquez ici&lt;/a&gt;
+                    </code></pre>
+                    <p><span class="highlight">Images :</span> Incluses avec la balise &lt;img&gt;.</p>
+                    <pre><code>
+                        &lt;img src="image.jpg" alt="Description de l'image"&gt;
+                    </code></pre>
+                    <p><span class="highlight">Listes :</span> Listes non ordonnées avec &lt;ul&gt; et listes ordonnées avec &lt;ol&gt;, chaque élément de liste étant défini par &lt;li&gt;.</p>
+                    <pre><code>
+                        &lt;ul&lt;
+                            &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
+                            &lt;li&gt;Autre élément&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                            &lt;li&gt;Premier élément&lt;/li&gt;
+                            &lt;li&gt;Deuxième élément&lt;/li&gt;
+                        &lt;/ol&lt;
+                    </code></pre>
+                    <p><span class="highlight">Formulaires :</span> Utilisés pour collecter des données utilisateur.</p>
+                    <pre><code>
+                        &lt;form action="/submit" method="post"&gt;
+                            &lt;label for="nom"&gt;;Nom :&lt;/label&gt;
+                            &lt;input type="text" id="nom" name="nom"&gt;
+                            &lt;input type="submit" value="Envoyer"&gt;
+                        &lt;/form&gt;
+                    </code></pre>
+                    <br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;En résumé, la balise &lt;head&gt; est utilisée pour inclure des informations méta et des ressources externes, tandis que la balise &lt;body&gt; contient tout le contenu visible et interactif de la page</p>
+                </div>
             </div>
-            <div id="head">
-                <h3>La partie &lt;head&gt;</h3>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;head&gt; contient des méta-informations sur le document. Ces informations ne sont pas affichées directement sur la page mais sont cruciales pour les moteurs de recherche, les navigateurs et autres services web. Voici quelques éléments courants dans la balise &lt;head&gt; :</p>
-                <br>
-                <p><span class="highlight">&lt;title&gt; :</span> Le titre de la page, affiché dans l'onglet du navigateur.</p>
-                <pre><code>
-                    &lt;title&gt;Ma première page HTML&lt;/title&gt;
-                </code></pre>
-                <p><span class="highlight">&lt;meta&gt; :</span> Les balises meta fournissent des informations telles que le jeu de caractères utilisé, l'auteur de la page, ou des mots-clés pour les moteurs de recherche.
-                </p>
-                <pre><code>
-                    &lt;meta charset="UTF-8"&gt;
-                    &lt;meta name="description" content="Une introduction au HTML"&gt;
-                    &lt;meta name="keywords" content="HTML, débutant, tutoriel"&gt;
-                    &lt;meta name="author" content="Votre Nom"&gt;
-                </code></pre>
-                <p><span class="highlight">&lt;link&gt; :</span> Utilisée pour lier des feuilles de style externes, comme CSS.</p>
-                <pre><code>
-                    &lt;link rel="stylesheet" href="styles.css"&gt;
-                </code></pre>
-                <p><span class="highlight">&lt;script&gt; :</span> Pour inclure des scripts JavaScript.
-                </p>
-                <pre><code>
-                    &lt;script src="script.js"&gt;&lt;/script&gt;
-                </code></pre>
+            <div id="balise">
+                <h1>Les Balises</h1>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Très bien ! Développons davantage sur les balises HTML. Les balises sont des éléments essentiels dans HTML car elles définissent la structure et le contenu de la page web. Chaque balise HTML commence par une balise ouvrante (&lt;tagname&gt;) et se termine par une balise fermante (&lt;/tagname&gt;). Certaines balises, appelées balises auto-fermantes, n'ont pas de balise fermante.</p>
+                <div id="titre">
+                    <h3>Balises de titre</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les balises de titre vont de &lt;h1&gt; à &lt;h6&gt;. Elles sont utilisées pour créer des titres de différentes tailles, &lt;h1&gt; étant le plus grand et &lt;h6&gt; le plus petit.</p>
+                    <pre><code>
+                        &lt;h1&gt;Titre principal&lt;/h1&gt;
+                        &lt;h2&gt;Sous-titre&lt;/h2&gt;
+                        &lt;h3&gt;Sous-sous-titre&lt;/h3&gt;
+                    </code></pre>
+                </div>
+                <div id="paragraphe">
+                    <h3>Balise de paragraphe</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;p&gt; est utilisée pour définir des paragraphes de texte.</p>
+                    <pre><code>
+                        &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+                    </code></pre>
+                </div>
+                <div id="lien">
+                    <h3>Balise de lien</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;a&gt; est utilisée pour créer des liens hypertexte. L'attribut href spécifie l'URL vers laquelle le lien pointe.</p>
+                    <pre><code>
+                        &lt;a href="https://example.com"&gt;Visitez notre site&lt;/a&gt;
+                    </code></pre>
+                </div>
+                <div id="image">
+                    <h3>Balise d'image</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;img&gt; est utilisée pour afficher des images. Elle est auto-fermante et utilise les attributs src (source de l'image) et alt (texte alternatif pour les lecteurs d'écran).</p>
+                    <pre><code>
+                        &lt;img src="image.jpg" alt="Description de l'image"&gt;
+                    </code></pre>
+                </div>
+                <div id="list">
+                    <h3>Balises de liste</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les listes non ordonnées sont créées avec la balise &lt;ul&gt;, et les listes ordonnées avec &lt;ol&gt;. Chaque élément de liste est défini par la balise &lt;li&gt;.</p>
+                    <pre><code>
+                        &lt;ul&gt;
+                            &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
+                            &lt;li&gt;Autre élément&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;ol&gt;
+                            &lt;li&gt;Premier élément de liste ordonnée&lt;/li&gt;
+                            &lt;li&gt;Deuxième élément&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </code></pre>
+                </div>
+                <div id="formulaire">
+                    <h3>Balises de formulaire</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les formulaires sont définis avec la balise &lt;form>. Les éléments de formulaire comprennent les champs de texte (&lt;input>), les zones de texte (&lt;textarea>), les boutons de soumission (&lt;button> ou &lt;input type="submit">), et bien d'autres.</p>
+                    <pre><code>
+                        &lt;form action="/submit" method="post"&gt;
+                            &lt;label for="nom"&gt;Nom :&lt;/label&gt;
+                            &lt;input type="text" id="nom" name="nom"&gt;
+                            &lt;input type="submit" value="Envoyer"&gt;
+                        &lt;/form&gt;
+                    </code></pre>
+                </div>
+                <div id="tableau">
+                    <h3>Balises de tableau</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les tableaux sont définis avec les balises &lt;table&gt;, &lt;tr&gt; (ligne de tableau), &lt;th> (cellule d'en-tête), et &lt;td&gt; (cellule de données).</p>
+                    <pre><code>
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Nom&lt;/th&gt;
+                                &lt;th&gt;Âge&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Jean&lt;/td&gt;
+                                &lt;td&gt;30&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Marie&lt;/td&gt;
+                                &lt;td&gt;25&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </code></pre>
+                </div>
+                <div id="sementique">
+                    <h3>Balises sémantiques</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les balises sémantiques donnent un sens structurel au contenu, ce qui améliore l'accessibilité et l'optimisation pour les moteurs de recherche. Quelques exemples incluent &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, et &lt;nav&gt;.</p>
+                    <pre><code>
+                        &lt;header&gt;
+                            &lt;h1&gt;Entête de la page&lt;/h1&gt;
+                        &lt;/header&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="#section1"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#section2"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                        &lt;section&gt;
+                            &lt;h2&gt;Section principale&lt;/h2&gt;
+                            &lt;p&gt;Contenu de la section principale.&lt;/p&gt;
+                        &lt;/section&gt;
+                        &lt;footer&gt;
+                            &lt;p&gt;Pied de page de la page&lt;/p&gt;
+                        &lt;/footer&gt;
+                    </code></pre>
+                </div>
             </div>
-            <div id="body">
-                <h3>La partie &lt;body&gt;</h3>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;body&gt; contient tout le contenu visible de la page, tel que les textes, images, vidéos, et autres éléments que les utilisateurs voient et interagissent avec. Voici quelques exemples d'éléments que l'on peut trouver dans la balise &lt;body&gt; :</p>
-                <br>
-                <p><span class="highlight">Titres et paragraphes :</span> Les titres sont définis par les balises &lt;h1&gt; à &lt;h6&gt;, et les paragraphes par la balise &lt;p&gt;.</p>
-                <pre><code>
-                    &lt;h1&gt;Bienvenue dans le monde du HTML!&lt;/h1&gt;
-                    &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
-                </code></pre>
-                <p><span class="highlight">Liens : </span>Créés avec la balise &lt;a&gt;.</p>
-                <pre><code>
-                    &lt;a href="https://example.com">Cliquez ici&lt;/a&gt;
-                </code></pre>
-                <p><span class="highlight">Images :</span> Incluses avec la balise &lt;img&gt;.</p>
-                <pre><code>
-                    &lt;img src="image.jpg" alt="Description de l'image"&gt;
-                </code></pre>
-                <p><span class="highlight">Listes :</span> Listes non ordonnées avec &lt;ul&gt; et listes ordonnées avec &lt;ol&gt;, chaque élément de liste étant défini par &lt;li&gt;.</p>
-                <pre><code>
-                    &lt;ul&lt;
-                        &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
-                        &lt;li&gt;Autre élément&lt;/li&gt;
-                    &lt;/ul&gt;
-                    &lt;ol&gt;
-                        &lt;li&gt;Premier élément&lt;/li&gt;
-                        &lt;li&gt;Deuxième élément&lt;/li&gt;
-                    &lt;/ol&lt;
-                </code></pre>
-                <p><span class="highlight">Formulaires :</span> Utilisés pour collecter des données utilisateur.</p>
-                <pre><code>
-                    &lt;form action="/submit" method="post"&gt;
-                        &lt;label for="nom"&gt;;Nom :&lt;/label&gt;
-                        &lt;input type="text" id="nom" name="nom"&gt;
-                        &lt;input type="submit" value="Envoyer"&gt;
-                    &lt;/form&gt;
-                </code></pre>
-                <br>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;En résumé, la balise &lt;head&gt; est utilisée pour inclure des informations méta et des ressources externes, tandis que la balise &lt;body&gt; contient tout le contenu visible et interactif de la page</p>
+            <div id="attribut">
+                <h2>Les Attributs</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Parlons maintenant des attributs en HTML. Les attributs fournissent des informations supplémentaires sur les éléments HTML. Ils apparaissent dans la balise ouvrante et sont constitués d'un nom et d'une valeur séparés par un signe égal. Voyons quelques attributs courants :</p>
+
+            </div>
+            <div id="lienUtile">
+                <h2>Quelques liens utiles</h2>
+                <p>Je précise que 80% du temps un developpeur fait des recherches pour ses projets et que seulement 20% du temps il code. Je vous invite donc a chercher sur internet quand vous bloquer sur un problème. Pour vous aidez voici quelque liens qui pourront vous être utiles :</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">Documentation MDN</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank">Validateur W3C</a></li>
+                </ul>
             </div>
         </main>
         <footer>
