@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(white, #5F11E8);
+    background-color: #18243F;
 }
 @font-face {
     font-family: 'Audiowide-Regular' ;
@@ -15,8 +15,8 @@ body {
 
 header {
     margin-left: 20%;
-    background-color: #5F11E8;
-    color: black;
+    background-color: #131D34;
+    color: white;
     padding: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -50,8 +50,9 @@ header #font i {
 }
 
 #menu{
-    background-color: #E3E6EF;
+    background-color: #131D34;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
     width: 20%;
     height: 100vh;
     position: fixed;
@@ -68,7 +69,34 @@ header #font i {
 #menu #ul1 {
     margin-left: 55px;
     margin-top: 30px;
+    color: white;
 }
+
+#menu #ul1 li a{
+    color:#CD1E5E;
+    padding-right: 10px;
+}
+
+.underline-effect {
+    position: relative;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+  }
+  
+  .underline-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* La barre commence avec une largeur de 0 */
+    height: 2px;
+    background-color: #CD1E5E;
+    transition: width 0.3s ease-out; /* L'animation dure 2 secondes */
+  }
+  
+  .underline-effect:hover::after {
+    width: 95%; /* La barre prend toute la largeur du texte lorsque le lien est survolé */
+  }
+  
 
 .ul2 {
     max-height: 0;
@@ -87,20 +115,16 @@ header #font i {
     margin-top: 10px;
 }
 
-#menu a {
-    color: black;
-    text-decoration: none;
-    font-size: large;
-    padding-right: 10px;
-}
-
 #menu #ul1 > li{
     border-top: solid 1px #5F11E8;
     padding: 10px;
 }
 
 #menu #ul1 li button {
+    background-color: #131D34;
+    color: white;
     cursor: pointer;
+    border: none;
 }
 
 .rotate-icon {
@@ -118,24 +142,26 @@ main {
     margin-left: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #E3E6EF;
+    background: transparent;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 main {
     animation: grow 1s;
-  }
+}
   
-  @keyframes grow {
-        0% { transform: scale(.2); }
-      100% { transform: scale(1); }
-  }
+@keyframes grow {
+    0% { transform: scale(.2); }
+    100% { transform: scale(1); }
+}
 
 .highlight {
     background-color: yellow; /* Couleur de surlignage */
     font-size: x-large;
+    color: #333;
 }
 
 p {
@@ -147,10 +173,10 @@ main div, main div div {
     margin-bottom: 20px;
 }
 #base p a {
-    color: #5F11E8;
+    color: #CD1E5E;
 }
 #base p a:hover {
-    color: black;
+    color:#5F11E8;
     font-size: x-large;
     transition-duration: 1s;
 }
@@ -169,20 +195,23 @@ main div h1{
     font-size: x-large;
     font-family: 'Audiowide-Regular';
 }
-pre {
-    background-color: #333;
+
+
+pre{
+    background-color: #131D34;
     border-radius: 10px;
-    border: solid 2px black;
+    border: solid 2px #CD1E5E;
     padding: 10px;
     color: white;
-    font-size: x-large;
+    font-size: large;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
+    
 
-code{
+}
+code {
     font-family: "Courier New", Courier, monospace;
 }
 footer {
@@ -199,7 +228,7 @@ footer a{
     margin: 10px
 }
 footer a:hover{
-    color: white;
+    color: #CD1E5E;
     text-decoration: underline;
-    transition: 0.5sS;
+    transition: 0.5s;
 }
