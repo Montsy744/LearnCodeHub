@@ -8,20 +8,22 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #18243F;
 }
 @font-face {
     font-family: 'Audiowide-Regular' ;
     src: url(./../Audiowide-Regular.ttf);
 }
   header {
-    background-color: #5F11E8;
-    color: black;
+    background-color: #131D34;
+    color: white;
     padding: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
   header nav h1 {
@@ -47,23 +49,6 @@ body {
     display: inline-block;
     color: white;
   }
-
-/*.texte-cache { 
-    display: none; 
-    position: absolute; 
-}
-header #font i:hover + .texte-cache { 
-    display: block; 
-    left: 0; 
-    top: 0; 
-    padding-left: 1.5em; 
-} 
-header #font i { 
-    transition: transform 0.3s ease; 
-} 
-header #font i:hover { 
-    transform: translateX(-50px); 
-}*/
 
 #intro p, #intro h2, #intro a, #image img {
     animation: grow 1s;
@@ -94,13 +79,14 @@ header #font i:hover {
 }
 
 #intro #text h2 {
-    color: #5F11E8;
+    color: #CD1E5E;
     font-family: 'Audiowide-Regular';
    
 }
 #intro #text p {
     font-size: large;
     text-align: justify ;
+    color: white;
     
 }
 #text #bouton a {
@@ -113,8 +99,8 @@ header #font i:hover {
 }
 #text #bouton{
     border-radius: 10px;
-    border: solid 1px #5F11E8;
-    background-color: #5F11E8;
+    border: solid 1px #CD1E5E;
+    background-color: #CD1E5E;
     padding: 15px;
     text-align: center;
     margin-top: 20px;
@@ -127,21 +113,30 @@ header #font i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #18243F;
+    border-radius: 30px;
     
 }
+
+#intro #image img {
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+
 #cour{
-    background: hsl(232, 22%, 90%);
-    color: rgba(95, 17, 232, 1);
+    background: #131D34;
     padding-left: 10px;
     padding-top: 40px;
     border-radius: 20px;
-    border-top: solid 7px rgba(0,0,0,0.7);
-    border-bottom: solid 7px rgba(0,0,0,0.7);
+    border-top: solid 7px #CD1E5E;
+    border-bottom: solid 7px #CD1E5E;
 }
 
 .title {
     text-align: center;
     font-family: 'Audiowide-Regular';
+    color: #CD1E5E;
 }
 .table{
     display: flex;
@@ -161,7 +156,12 @@ header #font i:hover {
   }
   th, td {
     padding: 15px;
+    color: #CD1E5E;
   }
+td a {
+    color: #CD1E5E;
+}
+
 thead tr th {
     font-size: large;
     font-family: 'Audiowide-Regular';
@@ -175,11 +175,13 @@ thead tr th {
     /* 2. Animate the opacity on hover */
   }
 .table tbody tr:hover {
-    background-color: white;
+    background-color: #18243F;
     opacity: 1;
     transform: scale(1.2);
 }
-  
+.table tbody .trTp:hover {
+    background-color: #131D34;
+}  
 td {
     /* 3. Scale the text using transform on hover */
     transition: transform 0.6s cubic-bezier(.48,-0.25,.35,1.73);
@@ -188,7 +190,7 @@ td {
     transform: scale(0.8);
 }
 #tp {
-    background: white;
+    background: #18243F;
     color: rgba(95, 17, 232, 1);
     padding-left: 10px;
     padding-top: 40px;

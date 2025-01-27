@@ -10,7 +10,10 @@ body {
 }
 @font-face {
     font-family: 'Audiowide-Regular' ;
-    src: url(./../Audiowide-Regular.ttf);
+    src: url('./../Audiowide-Regular.ttf');
+
+    font-family: 'code';
+    src: url('./../codeEcriture.ttf')
 }
 
 header {
@@ -23,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
   
 header nav h1 {
@@ -58,6 +62,7 @@ header #font i {
     position: fixed;
     top: 0;
     border-right: solid 3px #5F11E8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 #menu h1 {
@@ -145,7 +150,7 @@ main {
     background: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     color: white;
 }
 
@@ -182,7 +187,7 @@ main div, main div div {
 }
  main>div>h2{
     font-family: 'Audiowide-Regular';
-    font-size: large;
+    font-size: x-large;
 }
 main div h3{
     font-family: 'Audiowide-Regular';
@@ -208,12 +213,31 @@ pre{
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'code';
     
+}
 
+#lienUtile ul{
+    background-color: #131D34;
+    border-radius: 20px;
+    border: solid 2px #CD1E5E;
+    padding: 20px;
+    margin-top: 10px;
+    width: auto;
 }
-code {
-    font-family: "Courier New", Courier, monospace;
+#lienUtile ul li{
+    list-style:none;
 }
+#lienUtile ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Audiowide-Regular';
+}
+#lienUtile ul li a:hover {
+    color: #CD1E5E;
+}
+
 footer {
     bottom: 0;
     background-color: #333;

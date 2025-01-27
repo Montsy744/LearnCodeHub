@@ -21,9 +21,9 @@
                 <h1>HTML</h1>
             </nav>
             <div id="font">
-                <a href="./index.html"><i class="fa-solid fa-house fa-2x"></i></a>
+                <a href="./Acceuil.html"><i class="fa-solid fa-house fa-2x"></i></a>
                 <!--<p class="texte-cache">Acceuile</p>-->
-                <a href="#"><i class="fa-solid fa-comment fa-2x"></i></a>
+                <a href="https://discord.gg/wurwkyGq" target="_blank"><i class="fa-brands fa-discord fa-2x"></i></a>
                 <!--<p class="texte-cache">Forum</p>-->
             </div>
         </header>
@@ -43,33 +43,35 @@
                     <li><a href="#lien" class="underline-effect">Balise de lien</a></li>
                     <li><a href="#image" class="underline-effect">Balise d'image</a></li>
                     <li><a href="#list" class="underline-effect">Balises de liste</a></li>
-                    <li><a href="#formulaire" class="underline-effect">Balises de formulaire</a></li>
-                    <li><a href="#tableau" class="underline-effect">Balises de tableau</a></li>
+                    <li><a href="#baliseFormulaire" class="underline-effect">Balises de formulaire</a></li>
+                    <li><a href="#baliseTableau" class="underline-effect">Balises de tableau</a></li>
                     <li><a href="#sementique" class="underline-effect">Balises sémantiques</a></li>
                 </ul>
                 </li>
-                <li><a href="#" class="underline-effect">Les attributs</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <li><a href="#attributs" class="underline-effect">Les attributs</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
                 <ul class="ul2">
-                    <li><a href="#" class="underline-effect">Attributs communs</a></li>
-                    <li><a href="#" class="underline-effect">Attributs spécifiques à certaines balises</a></li>
-                    <li><a href="#" class="underline-effect">Attributs globaux</a></li>
+                    <li><a href="#attributCommun" class="underline-effect">Attributs communs</a></li>
+                    <li><a href="#attributSpecifique" class="underline-effect">Attributs spécifiques à certaines balises</a></li>
+                    <li><a href="#attributGlobaux" class="underline-effect">Attributs globaux</a></li>
                     
                 </ul>
                 </li>
-                <li><a href="#" class="underline-effect">Les Formulaires</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <li><a href="#formulaire" class="underline-effect">Les Formulaires</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
                 <ul class="ul2">
-                    <li><a href="#" class="underline-effect">Structure de base d'un formulaire</a></li>
-                    <li><a href="#" class="underline-effect">Attributs importants de la balise "form"</a></li>
-                    <li><a href="#" class="underline-effect">Types d'éléments de formulaire</a></li>
-                    <li><a href="#" class="underline-effect">Attributs des éléments de formulaire</a></li>
+                    <li><a href="#structureFormulaire" class="underline-effect">Structure de base d'un formulaire</a></li>
+                    <li><a href="#atributFrom" class="underline-effect">Attributs importants de la balise "form"</a></li>
+                    <li><a href="#typeElementFormulaire" class="underline-effect">Types d'éléments de formulaire</a></li>
+                    <li><a href="#attributElementFormulaire" class="underline-effect">Attributs des éléments de formulaire</a></li>
+                    <li><a href="#exempleFormulaire" class="underline-effect">Exemple de formulaire</a></li>
                 </ul>
                 </li>
-                <li><a href="#" class="underline-effect">Les Tables</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <li><a href="#tableau" class="underline-effect">Les Tables</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
                 <ul class="ul2">
-                    <li><a href="#" class="underline-effect">Structure de base d'un tableau</a></li>
-                    <li><a href="#" class="underline-effect">Balises et attributs des tableaux</a></li>
-                    <li><a href="#" class="underline-effect">Sous-éléments de tableau</a></li>
-                    <li><a href="#" class="underline-effect">Mise en forme des tableaux</a></li>
+                    <li><a href="#structureTableau" class="underline-effect">Structure de base d'un tableau</a></li>
+                    <li><a href="#baliseAttributTableau" class="underline-effect">Balises et attributs des tableaux</a></li>
+                    <li><a href="#sousElementTableau" class="underline-effect">Sous-éléments de tableau</a></li>
+                    <li><a href="#miseEnFormeTableau" class="underline-effect">Mise en forme des tableaux</a></li>
+                    <li><a href="#exempleTableau" class="underline-effect">Exemple de tableau</a></li>
                 </ul>
                 </li>
                 <li><a href="#lienUtile" class="underline-effect">Liens utiles</a></li>
@@ -93,7 +95,7 @@
             <div id="base">
                 <h2>1. Structure de base d'une page HTML</h2>
                 <p>Chaque document HTML commence par une déclaration de type :</p><pre><code>&lt;!DOCTYPE html&gt;</code></pre><p>Cette déclaration indique au navigateur que nous utilisons HTML5. Voici la structure de base d'une page HTML :</p>
-                <pre><code>
+                <pre>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                     &lt;head&gt;
@@ -104,7 +106,7 @@
                         &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
-                </code></pre>
+                </pre>
                 <p>Le code ci-dessus crée une page web avec un titre "Bienvenue sur Mon Site Web!" et un paragraphe expliquant l'utilisation de l'HTML. Les navigateurs web interprètent le code HTML pour afficher la page de manière compréhensible pour les utilisateurs.
 
                     L'HTML est souvent utilisé en combinaison avec d'autres technologies comme le <a href="./courCSS.html">CSS</a> (Cascading Style Sheets) pour la mise en forme et le <a href="./courJavaScript.html">JavaScript</a> pour l'interactivité. Ensemble, ces outils permettent de créer des sites web riches, dynamiques et esthétiques.</p>
@@ -113,46 +115,46 @@
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;head&gt; contient des méta-informations sur le document. Ces informations ne sont pas affichées directement sur la page mais sont cruciales pour les moteurs de recherche, les navigateurs et autres services web. Voici quelques éléments courants dans la balise &lt;head&gt; :</p>
                     <br>
                     <p><span class="highlight">&lt;title&gt; :</span> Le titre de la page, affiché dans l'onglet du navigateur.</p>
-                    <pre><code>
+                    <pre>
                         &lt;title&gt;Ma première page HTML&lt;/title&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">&lt;meta&gt; :</span> Les balises meta fournissent des informations telles que le jeu de caractères utilisé, l'auteur de la page, ou des mots-clés pour les moteurs de recherche.
                     </p>
-                    <pre><code>
+                    <pre>
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="description" content="Une introduction au HTML"&gt;
                         &lt;meta name="keywords" content="HTML, débutant, tutoriel"&gt;
                         &lt;meta name="author" content="Votre Nom"&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">&lt;link&gt; :</span> Utilisée pour lier des feuilles de style externes, comme CSS.</p>
-                    <pre><code>
+                    <pre>
                         &lt;link rel="stylesheet" href="styles.css"&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">&lt;script&gt; :</span> Pour inclure des scripts JavaScript.
                     </p>
-                    <pre><code>
+                    <pre>
                         &lt;script src="script.js"&gt;&lt;/script&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="body">
                     <h3>La partie &lt;body&gt;</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;body&gt; contient tout le contenu visible de la page, tel que les textes, images, vidéos, et autres éléments que les utilisateurs voient et interagissent avec. Voici quelques exemples d'éléments que l'on peut trouver dans la balise &lt;body&gt; :</p>
                     <br>
                     <p><span class="highlight">Titres et paragraphes :</span> Les titres sont définis par les balises &lt;h1&gt; à &lt;h6&gt;, et les paragraphes par la balise &lt;p&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;h1&gt;Bienvenue dans le monde du HTML!&lt;/h1&gt;
                         &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">Liens : </span>Créés avec la balise &lt;a&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;a href="https://example.com">Cliquez ici&lt;/a&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">Images :</span> Incluses avec la balise &lt;img&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;img src="image.jpg" alt="Description de l'image"&gt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">Listes :</span> Listes non ordonnées avec &lt;ul&gt; et listes ordonnées avec &lt;ol&gt;, chaque élément de liste étant défini par &lt;li&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;ul&lt;
                             &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
                             &lt;li&gt;Autre élément&lt;/li&gt;
@@ -161,56 +163,56 @@
                             &lt;li&gt;Premier élément&lt;/li&gt;
                             &lt;li&gt;Deuxième élément&lt;/li&gt;
                         &lt;/ol&lt;
-                    </code></pre>
+                    </pre>
                     <p><span class="highlight">Formulaires :</span> Utilisés pour collecter des données utilisateur.</p>
-                    <pre><code>
+                    <pre>
                         &lt;form action="/submit" method="post"&gt;
                             &lt;label for="nom"&gt;;Nom :&lt;/label&gt;
                             &lt;input type="text" id="nom" name="nom"&gt;
                             &lt;input type="submit" value="Envoyer"&gt;
                         &lt;/form&gt;
-                    </code></pre>
+                    </pre>
                     <br>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;En résumé, la balise &lt;head&gt; est utilisée pour inclure des informations méta et des ressources externes, tandis que la balise &lt;body&gt; contient tout le contenu visible et interactif de la page</p>
                 </div>
             </div>
             <div id="balise">
-                <h1>Les Balises</h1>
+                <h1>2. Les Balises</h1>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Très bien ! Développons davantage sur les balises HTML. Les balises sont des éléments essentiels dans HTML car elles définissent la structure et le contenu de la page web. Chaque balise HTML commence par une balise ouvrante (&lt;tagname&gt;) et se termine par une balise fermante (&lt;/tagname&gt;). Certaines balises, appelées balises auto-fermantes, n'ont pas de balise fermante.</p>
                 <div id="titre">
                     <h3>Balises de titre</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Les balises de titre vont de &lt;h1&gt; à &lt;h6&gt;. Elles sont utilisées pour créer des titres de différentes tailles, &lt;h1&gt; étant le plus grand et &lt;h6&gt; le plus petit.</p>
-                    <pre><code>
+                    <pre>
                         &lt;h1&gt;Titre principal&lt;/h1&gt;
                         &lt;h2&gt;Sous-titre&lt;/h2&gt;
                         &lt;h3&gt;Sous-sous-titre&lt;/h3&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="paragraphe">
                     <h3>Balise de paragraphe</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;p&gt; est utilisée pour définir des paragraphes de texte.</p>
-                    <pre><code>
+                    <pre>
                         &lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="lien">
                     <h3>Balise de lien</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;a&gt; est utilisée pour créer des liens hypertexte. L'attribut href spécifie l'URL vers laquelle le lien pointe.</p>
-                    <pre><code>
+                    <pre>
                         &lt;a href="https://example.com"&gt;Visitez notre site&lt;/a&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="image">
                     <h3>Balise d'image</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;La balise &lt;img&gt; est utilisée pour afficher des images. Elle est auto-fermante et utilise les attributs src (source de l'image) et alt (texte alternatif pour les lecteurs d'écran).</p>
-                    <pre><code>
+                    <pre>
                         &lt;img src="image.jpg" alt="Description de l'image"&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="list">
                     <h3>Balises de liste</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Les listes non ordonnées sont créées avec la balise &lt;ul&gt;, et les listes ordonnées avec &lt;ol&gt;. Chaque élément de liste est défini par la balise &lt;li&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;ul&gt;
                             &lt;li&gt;Élément de liste non ordonnée&lt;/li&gt;
                             &lt;li&gt;Autre élément&lt;/li&gt;
@@ -219,23 +221,23 @@
                             &lt;li&gt;Premier élément de liste ordonnée&lt;/li&gt;
                             &lt;li&gt;Deuxième élément&lt;/li&gt;
                         &lt;/ol&gt;
-                    </code></pre>
+                    </pre>
                 </div>
-                <div id="formulaire">
+                <div id="baliseFormulaire">
                     <h3>Balises de formulaire</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Les formulaires sont définis avec la balise &lt;form>. Les éléments de formulaire comprennent les champs de texte (&lt;input>), les zones de texte (&lt;textarea>), les boutons de soumission (&lt;button> ou &lt;input type="submit">), et bien d'autres.</p>
-                    <pre><code>
+                    <pre>
                         &lt;form action="/submit" method="post"&gt;
                             &lt;label for="nom"&gt;Nom :&lt;/label&gt;
                             &lt;input type="text" id="nom" name="nom"&gt;
                             &lt;input type="submit" value="Envoyer"&gt;
                         &lt;/form&gt;
-                    </code></pre>
+                    </pre>
                 </div>
-                <div id="tableau">
+                <div id="baliseTableau">
                     <h3>Balises de tableau</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Les tableaux sont définis avec les balises &lt;table&gt;, &lt;tr&gt; (ligne de tableau), &lt;th> (cellule d'en-tête), et &lt;td&gt; (cellule de données).</p>
-                    <pre><code>
+                    <pre>
                         &lt;table&gt;
                             &lt;tr&gt;
                                 &lt;th&gt;Nom&lt;/th&gt;
@@ -250,12 +252,12 @@
                                 &lt;td&gt;25&lt;/td&gt;
                             &lt;/tr&gt;
                         &lt;/table&gt;
-                    </code></pre>
+                    </pre>
                 </div>
                 <div id="sementique">
                     <h3>Balises sémantiques</h3>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;Les balises sémantiques donnent un sens structurel au contenu, ce qui améliore l'accessibilité et l'optimisation pour les moteurs de recherche. Quelques exemples incluent &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, et &lt;nav&gt;.</p>
-                    <pre><code>
+                    <pre>
                         &lt;header&gt;
                             &lt;h1&gt;Entête de la page&lt;/h1&gt;
                         &lt;/header&gt;
@@ -272,11 +274,13 @@
                         &lt;footer&gt;
                             &lt;p&gt;Pied de page de la page&lt;/p&gt;
                         &lt;/footer&gt;
-                    </code></pre>
+
+                        
+                    </pre>
                 </div>
             </div>
             <div id="attribut">
-                <h2>Les Attributs</h2>
+                <h2>3. Les Attributs</h2>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Parlons maintenant des attributs en HTML. Les attributs fournissent des informations supplémentaires sur les éléments HTML. Ils apparaissent dans la balise ouvrante et sont constitués d'un nom et d'une valeur séparés par un signe égal. Voyons quelques attributs courants :</p>
                 <div id="attributCommun">
                    <h3>Attributs communs</h3>
@@ -284,8 +288,521 @@
                     <pre>
                         &lt;p id="intro"&gt;Ceci est un paragraphe avec un identifiant unique.&lt;/p&gt;
                     </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">class :</span>Attribut utilisé pour regrouper plusieurs éléments sous une même classe. Utile pour appliquer des styles CSS de manière cohérente.</p>
+                    <pre>
+                        &lt;p class="important"&gt;Ceci est un paragraphe important.&lt;/p&gt;
+                        &lt;p class="important"&gt;Ceci est un autre paragraphe important.&lt;/p&gt;
+                    </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">style :</span> Attribut utilisé pour ajouter des styles CSS directement à un élément.</p>
+                    <pre>
+                        &lt;p style="color": red;"&gt;Ceci est un paragraphe en rouge.&lt;/p&gt;
+                    </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">title :</span> Attribut utilisé pour fournir des informations supplémentaires affichées sous forme de tooltip lorsque l'utilisateur passe la souris sur l'élément.</p>
+                    <pre>
+                        &lt;p title="Ce texte apparaîtra lorsque vous passerez la souris."&gt;Survolez-moi !&lt;/p&gt;
+                    </pre>
                 </div>
-                            </div>
+                <div id="attributSpecifique">
+                    <h3>Attributs spécifique a certaine balise</h3>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Balise &lt;a&gt; (Lien hypertexte) :</span></h4>
+                    <p>href : URL de la page vers laquelle le lien pointe.</p>
+                    <p>target : Spécifie où ouvrir le document lié (_blank pour ouvrir dans un nouvel onglet).</p>
+                    <pre>
+                        &lt;a href="https://example.com" target="_blank">Visitez notre site&lt;/a&gt;
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Balise &lt;img&gt; (Image) :</span></h4>
+                    <p>src : Chemin de l'image.</p>
+                    <p>alt : Texte alternatif pour les lecteurs d'écran.</p>
+                    <p>width et height : Dimensions de l'image.</p>
+                    <pre>
+                        &lt;img src="image.jpg" alt="Description de l'image" width="300" height="200"&gt;
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Balise &lt;input&gt; (Élément de formulaire) :</span></h4>
+                    <p>type : Type de champ (text, password, submit, etc.).</p>
+                    <p>name : Nom du champ, utilisé lors de la soumission du formulaire.</p>
+                    <p>placeholder : Texte d'exemple affiché à l'intérieur du champ.</p>
+                    <pre>
+                        &lt;input type="text" name="nom" placeholder="Entrez votre nom"&gt;
+                    </pre>
+                </div>
+                <div id="attributGlobaux">
+                    <h3>Attribut globaux</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les attributs globaux peuvent être utilisés sur n'importe quelle balise HTML pour fournir des fonctionnalités supplémentaires :</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">data-* :</span> Attributs personnalisés utilisés pour stocker des données supplémentaires sur un élément.
+                    </p>
+                    <pre>
+                        &lt;div data-info="informations supplémentaires"&gt;Contenu&lt;/div&gt;
+                    </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">hidden :</span> Attribut booléen qui masque un élément.</p>
+                    <pre>
+                        &lt;p hidden&gt;Ce texte est caché.&lt;/p&gt;
+                    </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">lang :</span> Attribut qui spécifie la langue de l'élément.</p>
+                    <pre>
+                        &lt;p lang="fr"&gt;Ce paragraphe est en français.&lt;/p&gt;
+                    </pre>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">tabindex :</span> Attribut qui spécifie l'ordre de tabulation pour la navigation au clavier.</p>
+                    <pre>
+                        &lt;button tabindex="1"&gt;Premier&lt;/button&gt;
+                        &lt;button tabindex="2"&gt;Deuxième&lt;/button&gt;
+                    </pre>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Les attributs HTML sont essentiels pour ajouter des fonctionnalités et des informations supplémentaires aux éléments HTML. Ils permettent de personnaliser et d'interagir avec les éléments de manière plus avancée.</p>
+                </div>
+            </div>
+            <div id="formulaire">
+                <h2>4. Les formulaire</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Développons la partie sur les formulaires en HTML. Les formulaires sont essentiels pour collecter des données auprès des utilisateurs, que ce soit pour des inscriptions, des commentaires, des recherches ou d'autres interactions sur une page web.</p>
+                <div id="structureFormulaire">
+                    <p>Un formulaire en HTML est créé à l'aide de la balise &lt;form&gt;. Cette balise contient plusieurs éléments de formulaire comme des champs de texte, des boutons, des cases à cocher, etc.</p>
+                    <p>Voici un exemple de structure de base d'un formulaire :</p>
+                    <pre>
+                        &lt;form action="/submit" method="post"&gt;
+                            &lt;label for="nom"&gt;Nom :&lt;/label&gt;
+                            &lt;input type="text" id="nom" name="nom"&gt;
+                            &lt;input type="submit" value="Envoyer"&gt;
+                        &lt;/form&gt;
+
+                        <form action="/submit" method="post">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom">
+                            <input type="submit" value="Envoyer">
+                          </form>
+                    </pre>
+                </div>
+                <div id="atributFrom">
+                    <h3>Attributs importants de la balise &lt;form&gt;</form></h3>
+                    <p><span class="highlight">action :</span> Spécifie l'URL où les données du formulaire seront envoyées lorsqu'il est soumis.</p>
+                    <p><span class="highlight">method :</span> Indique la méthode HTTP à utiliser pour envoyer les données (GET ou POST).</p>
+                </div>
+                <div id="typeElementFormulaire">
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Champ de texte</span></h4>
+                    <p>Le champ de texte est créé avec la balise &lt;input type="text"&gt;. Il permet à l'utilisateur de saisir des informations textuelles.</p>
+                    <pre>
+                        &lt;label&gt; for="nom"&gt;Nom :&lt;/label&gt;
+                        &lt;input type="text" id="nom" name="nom"&gt;
+
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom">
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Champ de mot de passe</span></h4>
+                    <p>Le champ de mot de passe masque le texte saisi par l'utilisateur pour des raisons de sécurité.</p>
+                    <pre>
+                        &lt;label for="motdepasse"&gt;Mot de passe :&lt;/label&gt;
+                        &lt;input type="password" id="motdepasse" name="motdepasse"&gt;
+
+                        <label for="motdepasse">Mot de passe :</label>
+                        <input type="password" id="motdepasse" name="motdepasse">
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Bouton de soumission</span></h4>
+                    <p>Le bouton de soumission envoie les données du formulaire à l'URL spécifiée dans l'attribut action.</p>
+                    <pre>
+                        &lt;input type="submit" value="Envoyer"&gt;
+
+                        <input type="submit" value="Envoyer">
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Cases à cocher</span></h4>
+                    <p>Les cases à cocher permettent à l'utilisateur de sélectionner une ou plusieurs options indépendamment.</p>
+                    <pre>
+                        &lt;label for="newsletter"&gt;S'abonner à la newsletter :&lt;/label&gt;
+                        &lt;input type="checkbox" id="newsletter" name="newsletter"&gt;
+
+                        <label for="newsletter">S'abonner à la newsletter :</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Boutons radio</span></h4>
+                    <p>Les boutons radio permettent à l'utilisateur de sélectionner une seule option parmi un groupe.</p>
+                    <pre>
+                        &lt;label for="genre"&gt;Genre :&lt;/label&gt;
+                        &lt;input type="radio" id="homme" name="genre" value="homme"&gt;
+                        &lt;label for="homme"&gt;Homme&lt;/label&gt;
+                        &lt;input type="radio" id="femme" name="genre" value="femme"&gt;
+                        &lt;label for="femme"&gt;Femme&lt;/label&gt;
+
+                        <label for="genre">Genre :</label>
+                        <input type="radio" id="homme" name="genre" value="homme">
+                        <label for="homme">Homme</label>
+                        <input type="radio" id="femme" name="genre" value="femme">
+                        <label for="femme">Femme</label>
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Liste déroulante</span></h4>
+                    <p>La liste déroulante permet à l'utilisateur de choisir une option parmi plusieurs.</p>
+                    <pre>
+                        &lt;label for="pays"&gt;Pays :&lt;/label&gt;
+                        &lt;select id="pays" name="pays"&gt;
+                            &lt;option value="france"&gt;France&lt;/option&gt;
+                            &lt;option value="espagne"&gt;Espagne&lt;/option&gt;
+                            &lt;option value="italie"&gt;Italie&lt;/option&gt;
+                        &lt;/select&gt;
+
+                        <label for="pays">Pays :</label>
+                        <select id="pays" name="pays">
+                            <option value="france">France</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="italie">Italie</option>
+                        </select>
+                    </pre>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">Zone de texte</span></h4>
+                    <p>La zone de texte permet à l'utilisateur de saisir des paragraphes de texte.</p>
+                    <pre>
+                        &lt;label for="message"&gt;Message :&lt;/label&gt;
+                        &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message"></textarea>
+                    </pre>
+                </div>
+                <div id="attributElementFormulaire">
+                    <h3>Attributs des éléments de formulaire</h3>
+                    <p><span class="highlight">name :</span> Nom du champ utilisé lors de la soumission du formulaire.</p>
+                    <p><span class="highlight">value :</span> Valeur par défaut du champ.</p>
+                    <p><span class="highlight">placeholder :</span> Valeur par défaut du champ.</p>
+                    <p><span class="highlight">required :</span> Indique que le champ est obligatoire.</p>
+                    <p><span class="highlight">readonly :</span> Rend le champ non modifiable.</p>
+                    <p><span class="highlight">disabled :</span> Désactive le champ.</p>
+                </div>
+                <div id="exempleFormulaire">
+                    <h3>Exemple de formulaire complet</h3>
+                    <p>Voici un exemple de formulaire complet intégrant plusieurs éléments :</p>
+                    <pre>
+                        &lt;form action="/submit" method="post"&gt;
+                            &lt;label for="nom"&gt;Nom :&lt;/label&gt;
+                            &lt;input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required&gt;
+                          
+                            &lt;label for="motdepasse"&gt;Mot de passe :&lt;/label&gt;
+                            &lt;input type="password" id="motdepasse" name="motdepasse" required&gt;
+                          
+                            &lt;label for="newsletter"&gt;S'abonner à la newsletter :&lt;/label&gt;
+                            &lt;input type="checkbox" id="newsletter" name="newsletter"&gt;
+                          
+                            &lt;label for="genre"&gt;Genre :&lt;/label&gt;
+                            &lt;input type="radio" id="homme" name="genre" value="homme"&gt;
+                            &lt;label for="homme"&gt;Homme&lt;/label&gt;
+                            &lt;input type="radio" id="femme" name="genre" value="femme"&gt;
+                            &lt;label for="femme"&gt;Femme&lt;/label&gt;
+                          
+                            &lt;label for="pays"&gt;Pays :&lt;/label&gt;
+                            &lt;select id="pays" name="pays"&gt;
+                                &lt;option value="france"&gt;France&lt;/option&gt;
+                                &lt;option value="espagne"&gt;Espagne&lt;/option&gt;
+                                &lt;option value="italie"&gt;Italie&lt;/option&gt;
+                            &lt;/select&gt;
+                          
+                            &lt;label for="message"&gt;Message :&lt;/label&gt;
+                            &lt;textarea id="message" name="message">&lt;/textarea&gt;
+                          
+                            &lt;input type="submit" value="Envoyer"&gt;
+                        &lt;/form&gt;
+
+                        <form action="/submit" method="post">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                          
+                            <label for="motdepasse">Mot de passe :</label>
+                            <input type="password" id="motdepasse" name="motdepasse" required>
+                          
+                            <label for="newsletter">S'abonner à la newsletter :</label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                          
+                            <label for="genre">Genre :</label>
+                            <input type="radio" id="homme" name="genre" value="homme">
+                            <label for="homme">Homme</label>
+                            <input type="radio" id="femme" name="genre" value="femme">
+                            <label for="femme">Femme</label>
+                          
+                            <label for="pays">Pays :</label>
+                            <select id="pays" name="pays">
+                              <option value="france">France</option>
+                              <option value="espagne">Espagne</option>
+                              <option value="italie">Italie</option>
+                            </select>
+                          
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message"></textarea>
+                          
+                            <input type="submit" value="Envoyer">
+                          </form>
+                    </pre>
+                </div>
+            </div>
+            <div id="tableau">
+                <h2>5. Les Tableau</h2>
+                <p>Développons davantage sur les tableaux en HTML. Les tableaux sont utilisés pour organiser des données tabulaires sur une page web. Ils sont définis à l'aide de plusieurs balises HTML spécifiques.                </p>
+                <div id="structureTableau">
+                    <h3>Structure de base d'un tableau</h3>
+                    <p>La balise &lt;table&gt; définit le tableau. À l'intérieur de cette balise, les lignes du tableau sont définies par des balises &lt;tr&gt; (table row). Chaque ligne contient des cellules de données définies par &lt;td&gt; (table data) et des cellules d'en-tête définies par &lt;th&gt; (table header).</p>
+                    <p>Voici un exemple de structure de base d'un tableau :</p>
+                    <pre>
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Nom&lt;/th&gt;
+                                &lt;th&gt;Âge&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Jean&lt;/td&gt;
+                                &lt;td&gt;30&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Marie&lt;/td&gt;
+                                &lt;td&gt;25&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+
+                    </pre>
+                </div>
+                <div id="baliseAttributTableau">
+                    <h3>Balises et attributs des tableaux</h3>
+                    <h4><span class="highlight">&lt;table&gt;</span></h4>
+                    <p>La balise &lt;table&gt; contient l'ensemble du tableau.</p>
+                    <h4><span class="highlight">&lt;tr&gt;</span></h4>
+                    <p>La balise &lt;tr&gt; définit une ligne dans le tableau.</p>
+                    <h4><span class="highlight">&lt;th&gt;</span></h4>
+                    <p>La balise &lt;th&gt; définit une cellule d'en-tête, généralement située dans les lignes ou colonnes en tête du tableau. Le texte dans une cellule <th> est automatiquement mis en gras et centré.</p>
+                    <h4><span class="highlight">&lt;td&gt;</span></h4>
+                    <p>La balise &lt;td&gt; définit une cellule de données standard dans le tableau.</p>
+
+                    <h4>Attributs courants</h4>
+                    <p><span class="highlight">border :</span> Ajoute une bordure autour des cellules du tableau.</p>
+                    <pre>
+                        &lt;table border="1"&gt;
+                            ...
+                        &lt;/table&gt;
+                    </pre>
+                    <p><span class="highlight">colspan :</span> Fusionne plusieurs colonnes pour une cellule spécifique.</p>
+                    <pre>
+                        &lt;td colspan="2"&gt;Cellule fusionnée&lt;/td&gt;
+                    </pre>
+                    <p><span class="highlight">rowspan :</span> Fusionne plusieurs lignes pour une cellule spécifique.</p>
+                    <pre>
+                        &lt;td rowspan="2"&gt;Cellule fusionnée&lt;/td&gt;
+                    </pre>
+
+                </div>
+                <div id="sousElementTableau">
+                    <h3>Sous-éléments de tableau</h3>
+                    <p>La balise <thead> est utilisée pour regrouper les lignes d'en-tête du tableau.</p>
+                    <pre>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                              </tr>
+                            </thead>
+                            ...
+                        </table>
+                        
+
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                                </tr>
+                            </thead>
+                            ...
+                        </table>
+                        
+                    </pre>
+                    <p>La balise <tbody> est utilisée pour regrouper les lignes de données du tableau.
+                    </p>
+                    <pre>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Jean</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>Marie</td>
+                                <td>25</td>
+                              </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Jean</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>Marie</td>
+                                <td>25</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </pre>
+                    <p>La balise <tfoot> est utilisée pour regrouper les lignes de pied de tableau.</p>
+                    <pre>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Jean</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>Marie</td>
+                                <td>25</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td colspan="2">Fin du tableau</td>
+                              </tr>
+                            </tfoot>
+                        </table>
+
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Nom</th>
+                                <th>Âge</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Jean</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>Marie</td>
+                                <td>25</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td colspan="2">Fin du tableau</td>
+                              </tr>
+                            </tfoot>
+                        </table>
+                    </pre>
+                </div>
+                <div id="miseEnFormeTableau">
+                    
+                </div>
+                <div id="exempleTableau">
+                    <pre>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <title>Exemple de Tableau</title>
+                        <style>
+                            table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            }
+                            th, td {
+                            border: 1px solid black;
+                            padding: 8px;
+                            text-align: left;
+                            }
+                            th {
+                            background-color: #f2f2f2;
+                            }
+                        </style>
+                        </head>
+                        <body>
+
+                        <table>
+                        <thead>
+                            <tr>
+                            <th>Nom</th>
+                            <th>Âge</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Jean</td>
+                            <td>30</td>
+                            </tr>
+                            <tr>
+                            <td>Marie</td>
+                            <td>25</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                            <td colspan="2">Fin du tableau</td>
+                            </tr>
+                        </tfoot>
+                        </table>
+
+                        </body>
+                        </html>
+
+
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <title>Exemple de Tableau</title>
+                        <style>
+                            table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            }
+                            th, td {
+                            border: 1px solid black;
+                            padding: 8px;
+                            text-align: left;
+                            
+                            }
+                            th {
+                            background-color: #f2f2f2;
+                            color: black;
+                            }
+                        </style>
+                        </head>
+                        <body>
+
+                        <table>
+                        <thead>
+                            <tr>
+                            <th>Nom</th>
+                            <th>Âge</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Jean</td>
+                            <td>30</td>
+                            </tr>
+                            <tr>
+                            <td>Marie</td>
+                            <td>25</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                            <td colspan="2">Fin du tableau</td>
+                            </tr>
+                        </tfoot>
+                        </table>
+
+                        </body>
+                        </html>
+                    </pre>
+                </div>
+            </div>
             <div id="lienUtile">
                 <h2>Quelques liens utiles</h2>
                 <p>Je précise que 80% du temps un developpeur fait des recherches pour ses projets et que seulement 20% du temps il code. Je vous invite donc a chercher sur internet quand vous bloquer sur un problème. Pour vous aidez voici quelque liens qui pourront vous être utiles :</p>

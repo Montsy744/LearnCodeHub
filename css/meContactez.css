@@ -3,36 +3,35 @@
     padding: 0;
     /*border: solid 1px red;*/
 }
+body{
+  background-color: #18243F;
+}
 @font-face {
     font-family: 'Audiowide-Regular' ;
-    src: url(./../Audiowide-Regular.ttf);
+    src: url('./../Audiowide-Regular.ttf');
 }
   header {
-   background-color: #E3E6EF ;
-   color: black;
+    background-color: #131D34;
+    color: white;
     padding: 20px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
   header nav a {
     font-size: large;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 20px;
     font-family: 'Audiowide-Regular';
   }
 
-  header nav a:hover {
-    color: #64C7D0;
-    
-  }
-
   header a h1 {
-    color: #64C7D0;
+    color: white;
     font-family: 'Audiowide-Regular';
   }
   header a{
@@ -42,6 +41,6 @@
     padding: 10px;
     position: relative; 
     display: inline-block;
-    color: #64C7D0;
+    color: white;
     
   }
