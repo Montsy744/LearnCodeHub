@@ -13,7 +13,7 @@ body {
     src: url('./../Audiowide-Regular.ttf');
 
     font-family: 'code';
-    src: url('./../codeEcriture.ttf')
+    src: url('./../codeEcriture.ttf');
 }
 
 header {
@@ -191,6 +191,9 @@ main div h1{
     font-size: x-large;
     font-family: 'Audiowide-Regular';
 }
+h4{
+    font-size: x-large;
+}
 
 pre{
     background-color: #131D34;
@@ -206,6 +209,51 @@ pre{
     font-family: 'code';
     
 }
+
+/*pour le js*/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;/*sans marge a gauche*/
+    top: 0;/*sans marge en haut*/
+    background-color: rgba(95, 17, 232,0.76);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  .modalBloc{
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-top: 10px solid black;
+  }
+  
+  .modalBtn {
+    margin: 5%;
+  }
+  
+  .modalBtn a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .modalBtn a:hover{
+    opacity: 0.7
+  }
+  
+  .modalTextTitle{
+    font-size: 60px;
+  }
+  .modalTextParagraphe{
+    font-size: large;
+  }
+
 footer {
     bottom: 0;
     background-color: #333;

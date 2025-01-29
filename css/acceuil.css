@@ -113,8 +113,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #18243F;
-    border-radius: 30px;
+    background: transparent;
+    
     
 }
 

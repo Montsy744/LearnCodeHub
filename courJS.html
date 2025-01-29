@@ -13,13 +13,13 @@
         
         <!--lien vers le js-->
         <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
-        <script src="./js/courJS.js"></script>
+        
     </head>
     <body>
         <header>
             <a href="./index.html"><h1>LearnCodeHub</h1></a>
             <nav>
-                <h1>HTML</h1>
+                <h1>JavaScript</h1>
             </nav>
             <div id="font">
                 <a href="./Acceuil.html"><i class="fa-solid fa-house fa-2x"></i></a>
@@ -39,8 +39,8 @@
                 <li><a href="#DOM" class="underline-effect">DOM</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
                 <ul class="ul2">
                     <li><a href="#whatADOM" class="underline-effect">qu'est ce que c'est ?</a></li>
-                    <li><a href="#selectionElement" class="underline-effect">Séléction des éléments</a></li>
                     <li><a href="#navigationDuDOM" class="underline-effect">Naviguer dans le DOM</a></li>
+                    <li><a href="#selectionElement" class="underline-effect">Séléction des éléments</a></li>
                     <li><a href="#manipulElement" class="underline-effect">Manipulation des éléments</a></li>
                 </ul>
                 </li>
@@ -70,16 +70,6 @@
                 </li>
             </ul>
         </nav>
-        <script>
-            document.querySelectorAll('.grosTitre').forEach(button => {
-                button.addEventListener('click', function() {
-                    const ul2 = this.nextElementSibling;
-                    ul2.classList.toggle('open');
-                    const icon = this.querySelector('.rotate-icon');
-                    icon.classList.toggle('rotated');
-                });
-            });
-        </script>
         <main>
             <div id="#introductionJS">
                 <h1>Introduction au JavaScript</h1>
@@ -102,6 +92,237 @@
                     &lt;/body&gt;
                     &lt;/html&gt;
                 </pre>
+                <p>Dans cet exemple, lorsque vous cliquez sur le bouton, une alerte s'affiche avec le message "Bonjour à tous!".</p>
+                <div id="baseJS">
+                    <h3>Les bases du JavaScript</h3>
+                    <p>Voici quelques concepts de base en JavaScript :</p>
+                    <p><span class="highlight"> Variables :</span> Elles permettent de stocker des données.</p>
+                    <pre>
+                        var nom = "Alice";
+                        let age = 25;
+                        const ville = "Paris";
+
+                        let nombre = 42; // Nombre
+                        let texte = "Salut!"; // Chaîne de caractères
+                        let vraiFaux = true; // Booléen
+                        let tableau = [1, 2, 3]; // Tableau
+                        let objet = { nom: "Jean", age: 30 }; // Objet
+                    </pre>
+                    <p><span class="highlight"> Fonctions :</span> Elles sont des blocs de code réutilisables.</p>
+                    <pre>
+                        // Déclaration de la fonction
+                        function saluer(nom) {
+                        return `Bonjour, ${nom}!`;
+                        }
+
+                        // Utilisation de la fonction
+                        const message = saluer("Alex");
+                        console.log(message); // Affiche "Bonjour, Alex!"
+                    </pre>
+                    <p><span class="highlight"> Conditions :</span> Elles permettent d'exécuter du code sous certaines conditions.</p>
+                    <pre>
+                        if (age > 18) {
+                            console.log("Adulte");
+                        } else {
+                            console.log("Mineur");
+                        }
+                    </pre>
+                    <p><span class="highlight"> Boucles :</span> Elles permettent de répéter des actions.</p>
+                    <pre>
+                        for (let i = 0; i < 5; i++) {
+                            console.log(i);
+                        }
+                    </pre>
+                </div>
+            </div>
+            <div id="DOM">
+                <h2>Le DOM</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;La manipulation du DOM (Document Object Model) est une partie essentielle de JavaScript, surtout pour rendre les pages web interactives. Voici un développement plus détaillé sur ce sujet.</p>
+                <div id="whatADOM">
+                    <h3>Qu'est-ce que le DOM ?</h3>
+                    <p>Le DOM est une représentation en arbre de la structure d'un document HTML ou XML. Chaque élément du document devient un "nœud" dans cet arbre, ce qui permet à JavaScript de naviguer et de manipuler ces nœuds.</p>
+                </div>
+                <div id="navigationDuDOM">
+                    <h3>Naviguer dans le DOM</h3>
+                    <p>Il est possible de naviguer dans l'arborescence du DOM pour atteindre différents éléments.</p>
+                    <p>Accéder aux parents, enfants et frères/sœurs</p>
+                    <pre>
+                        let parent = element.parentNode;  // Accède au parent de l'élément
+                        let children = element.childNodes;  // Accède à tous les enfants de l'élément (nœuds texte inclus)
+                        let firstChild = element.firstChild;  // Accède au premier enfant
+                        let lastChild = element.lastChild;  // Accède au dernier enfant
+                        let nextSibling = element.nextSibling;  // Accède au prochain frère/sœur
+                        let previousSibling = element.previousSibling;  // Accède au frère/sœur précédent
+                    </pre>
+                </div>
+                <div id="selectionElement">
+                    <h3>Sélection des éléments du DOM</h3>
+                    <p>La première étape pour manipuler le DOM est de sélectionner les éléments que tu veux modifier. Voici quelques méthodes pour le faire :</p>
+                    <pre>
+                        // Sélection par ID
+                        let element = document.getElementById('monId');
+
+                        // Sélection par classe
+                        let elements = document.getElementsByClassName('maClasse');
+
+                        // Sélection par balise
+                        let tags = document.getElementsByTagName('p');
+
+                        // Sélection avec sélecteurs CSS
+                        let query = document.querySelector('.maClasse');
+                        let allQueries = document.querySelectorAll('.maClasse');
+                    </pre>
+                </div>
+                <div id="manipulElement">
+                    <h3>Manipulation des éléments du DOM</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Une fois que tu as sélectionné un élément, tu peux le manipuler de différentes manières :</p>
+                    <p><span class="highlight">Changer le contenu</span></p>
+                    <pre>
+                        element.innerHTML = 'Nouveau contenu';  // Permet d'inclure du HTML
+                        element.textContent = 'Nouveau texte';  // Juste du texte
+                    </pre>
+                    <p><span class="highlight">Changer les styles</span></p>
+                    <pre>
+                        element.style.color = 'blue';  // Change la couleur du texte
+                        element.style.backgroundColor = 'yellow';  // Change la couleur de fond
+                        element.style.fontSize = '20px';  // Change la taille de la police
+                    </pre>
+                    <p><span class="highlight">Ajouter/Supprimer des classes</span></p>
+                    <pre>
+                        element.classList.add('nouvelleClasse');  // Ajoute une classe
+                        element.classList.remove('ancienneClasse');  // Supprime une classe
+                        element.classList.toggle('classe');  // Ajoute ou supprime une classe selon son état                        
+                    </pre>
+                    <p><span class="highlight">Créer et ajouter des éléments</span></p>
+                    <pre>
+                        let newElement = document.createElement('div');  // Crée un nouvel élément &lt;div&gt;
+                        newElement.textContent = 'Contenu du nouvel élément';  // Ajoute du contenu
+                        document.body.appendChild(newElement);  // Ajoute le nouvel élément à la fin du &lt;body&gt;                       
+                    </pre>
+                    <p><span class="highlight">Supprimer des éléments</span></p>
+                    <pre>
+                        element.remove();  // Supprime l'élément sélectionné
+                    </pre>
+                </div>
+            </div>
+            <div id="attributs">
+                <h2>Les attributs HTML</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Grace au JavaScript il est possible de modifier, récupérer ou suprimer la valeurs d'un attributs HTML </p>
+                <div id="attributHTML">
+                    <h3>Travailler avec les Attributs</h3>
+                    <p>Les attributs des éléments HTML peuvent être manipulés avec JavaScript.</p>
+                    <p ><span class="highlight">Obtenir et définir des attributs</span></p>
+                    <pre>
+                        let attribut = element.getAttribute('src');  // Obtenir la valeur d'un attribut
+                        element.setAttribute('src', 'nouvelleValeur');  // Définir une nouvelle valeur pour un attribut
+                        element.removeAttribute('src');  // Supprimer un attribut                    
+                    </pre>
+                </div>
+                <div id="exempleAttribut">
+                    <h3>Exemples Pratiques</h3>
+                    <p>Voici quelques exemples pratiques pour illustrer comment manipuler le DOM :</p>
+                    <p><span class="highlight">Exemple 1 :</span> Ajouter un nouvel élément avec du texte</p>
+                    <pre>
+                        let newParagraph = document.createElement('p');
+                        newParagraph.textContent = 'Ceci est un nouveau paragraphe.';
+                        document.body.appendChild(newParagraph);                        
+                    </pre>
+                    <p><span class="highlight">Exemple 2 :</span> Modifier le style d'un élément quand il est cliqué</p>
+                    <pre>
+                        let button = document.getElementById('monBouton');
+                        button.addEventListener('click', function() {
+                            button.style.backgroundColor = 'green';
+                        });                        
+                    </pre>
+                </div>
+            </div>
+            <div id="evenement">
+                <h2>Les événements en JavaScript</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;En JavaScript, un événement est une action ou une occurrence détectée par le navigateur, à laquelle on peut attacher une réponse. Les événements peuvent être déclenchés par diverses actions de l'utilisateur, telles que :</p>
+                <ul>
+                    <li><p><span class="highlight">Cliquez sur un élément :</span>par exemple, un bouton ou un lien. </p></li>
+                    <li><p><span class="highlight">Mouvement de la souris :</span>par exemple, lorsqu'un utilisateur déplace la souris sur un élément.</p> </li>
+                    <li><p><span class="highlight">Pression d'une touche :</span>par exemple, lorsqu'un utilisateur appuie sur une touche du clavier. </p></li>
+                    <li><p><span class="highlight">Modification d'un champ de formulaire :</span>par exemple, lorsqu'un utilisateur entre du texte dans un champ de saisie.</p> </li>
+                </ul>
+                <div id="ecouteurEvenement">
+                    <h3>Écouteurs d'Événements</h3>
+                    <p>Les événements permettent de rendre une page interactive en réagissant aux actions de l'utilisateur (clics, survols, etc.).</p>
+                    <h4>Comment gérer les événements ?</h4>
+                    <p>JavaScript offre plusieurs façons de gérer les événements :</p>
+                    <ul>
+                        <li>
+                            <span class="highlight">Directement dans le HTML</span>
+                            <pre>
+                                &lt;button onclick="alert('Bouton cliqué !')"&gt;Cliquez-moi&lt;/button&gt;
+                            </pre>
+                        </li>
+                        <li>
+                            <span class="highlight">Avec la méthode addEventListener()</span>
+                            <pre>
+                                document.getElementById("monBouton").addEventListener("click", function() {
+                                    alert('Bouton cliqué !');
+                                  });                                                                  
+                            </pre>
+                        </li>
+                        <li>
+                            <span class="highlight">Utilisation de fonctions anonymes ou nommées</span>
+                            <pre>
+                                function afficherMessage() {
+                                    alert('Bouton cliqué !');
+                                }
+                                  
+                                document.getElementById("monBouton").addEventListener("click", afficherMessage);                                
+                            </pre>
+                        </li>
+                    </ul>
+                    <p>Événements communs :</p>
+                    <ol>
+                        <li><p>click : Quand un élément est cliqué.</p></li>
+                        <li><p>mouseover : Quand la souris passe sur un élément.</p></li>
+                        <li><p>mouseout : Quand la souris quitte un élément.</p></li>
+                        <li><p>keydown : Quand une touche du clavier est enfoncée.</p></li>
+                    </ol>
+                </div>
+                <div id="manipulationEvenement">
+                    <h3>Manipulation des Evénements Avancée</h3>
+                    <p>Vous pouvez ajouter des gestionnaires d'événements pour des interactions plus complexes :</p>
+                    <pre>
+                        document.querySelector('button').addEventListener('mouseover', function() {
+                            console.log('Le bouton est survolé.');
+                        });
+                        
+                        document.querySelector('button').addEventListener('click', function() {
+                            console.log('Le bouton est cliqué.');
+                        });                       
+                    </pre>
+                </div>
+            </div>
+            <div id="fetch">
+                <h2>L'API Fetch</h2>
+                <div id="whatAPIFetch">
+                    <h3>Qu'est-ce que l'API Fetch?</h3>
+                    <p>L'API Fetch est une interface moderne et flexible pour effectuer des requêtes HTTP en JavaScript. Elle est utilisée pour interagir avec des serveurs afin de récupérer ou envoyer des données. Contrairement à l'ancienne méthode XMLHttpRequest, l'API Fetch est plus simple à utiliser et offre des fonctionnalités avancées comme les Promises, facilitant la gestion des requêtes asynchrones.</p>
+                    <h4>Principaux avantages de l'API Fetch :</h4>
+                    <p><span class="highlight">Simplicité :</span>Syntaxe claire et concise.</p>
+                    <p><span class="highlight">Promesses :</span>Utilise des Promises pour gérer les opérations asynchrones, rendant le code plus lisible.</p>
+                    <p><span class="highlight">Supporte CORS :</span> Gère les requêtes entre différentes origines de manière sécurisée.</p>
+                </div>
+                <div id="utilisationAPIFetch">
+                    <h3>Utilisation de l'API Fetch</h3>
+                    <p>L'API Fetch permet de récupérer des ressources à partir d'un serveur. Voici un exemple de requête GET :</p>
+                    <pre>
+                        fetch('https://api.example.com/donnees')
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data);
+                            })
+                            .catch(error => {
+                                console.error('Erreur:', error);
+                            });                        
+                    </pre>
+
+                </div>
             </div>
         </main>
         <footer>
@@ -126,6 +347,6 @@
                 </div>
             </div>
         </div>
-
+        <script src="./js/courJS.js"></script>
     </body>
 </html>

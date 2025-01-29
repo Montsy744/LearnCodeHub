@@ -16,3 +16,13 @@ var btn = document.getElementById("btn");
 btn.onclick = function() {
     modal.style.display = "none";
 }
+
+
+document.querySelectorAll('.grosTitre').forEach(button => {
+    button.addEventListener('click', function() {
+        const ul2 = this.nextElementSibling;
+        ul2.classList.toggle('open');
+        const icon = this.querySelector('.rotate-icon');
+        icon.classList.toggle('rotated');
+    });
+});
