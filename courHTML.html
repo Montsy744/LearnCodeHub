@@ -70,7 +70,6 @@
                     <li><a href="#structureTableau" class="underline-effect">Structure de base d'un tableau</a></li>
                     <li><a href="#baliseAttributTableau" class="underline-effect">Balises et attributs des tableaux</a></li>
                     <li><a href="#sousElementTableau" class="underline-effect">Sous-éléments de tableau</a></li>
-                    <li><a href="#miseEnFormeTableau" class="underline-effect">Mise en forme des tableaux</a></li>
                     <li><a href="#exempleTableau" class="underline-effect">Exemple de tableau</a></li>
                 </ul>
                 </li>
@@ -581,17 +580,16 @@
                 </div>
                 <div id="sousElementTableau">
                     <h3>Sous-éléments de tableau</h3>
-                    <p>La balise <thead> est utilisée pour regrouper les lignes d'en-tête du tableau.</p>
+                    <p>La balise &lt;thead&gt; est utilisée pour regrouper les lignes d'en-tête du tableau.</p>
                     <pre>
-                        <table>
-                            <thead>
-                              <tr>
-                                <th>Nom</th>
-                                <th>Âge</th>
-                              </tr>
-                            </thead>
-                            ...
-                        </table>
+                        &lt;table>
+                            &lt;thead&gt;
+                                &lt;tr&gt;
+                                &lt;th&gt;Nom&lt;/th&gt;
+                                &lt;th&gt;Âge&lt;/th&gt;
+                                &lt;/tr&gt;
+                            &lt;/thead&gt;
+                        &lt;/table&gt;
                         
 
                         <table>
@@ -601,39 +599,26 @@
                                 <th>Âge</th>
                                 </tr>
                             </thead>
-                            ...
                         </table>
                         
                     </pre>
-                    <p>La balise <tbody> est utilisée pour regrouper les lignes de données du tableau.
+                    <p>La balise &lt;tbody> est utilisée pour regrouper les lignes de données du tableau.
                     </p>
                     <pre>
-                        <table>
-                            <thead>
-                              <tr>
-                                <th>Nom</th>
-                                <th>Âge</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Jean</td>
-                                <td>30</td>
-                              </tr>
-                              <tr>
-                                <td>Marie</td>
-                                <td>25</td>
-                              </tr>
-                            </tbody>
-                        </table>
+                        &lt;table&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Jean&lt;/td&gt;
+                                    &lt;td&gt;30&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Marie&lt;/td&gt;
+                                    &lt;td&gt;25&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
 
                         <table>
-                            <thead>
-                              <tr>
-                                <th>Nom</th>
-                                <th>Âge</th>
-                              </tr>
-                            </thead>
                             <tbody>
                               <tr>
                                 <td>Jean</td>
@@ -646,49 +631,17 @@
                             </tbody>
                         </table>
                     </pre>
-                    <p>La balise <tfoot> est utilisée pour regrouper les lignes de pied de tableau.</p>
+                    <p>La balise &lt;tfoot> est utilisée pour regrouper les lignes de pied de tableau.</p>
                     <pre>
-                        <table>
-                            <thead>
-                              <tr>
-                                <th>Nom</th>
-                                <th>Âge</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Jean</td>
-                                <td>30</td>
-                              </tr>
-                              <tr>
-                                <td>Marie</td>
-                                <td>25</td>
-                              </tr>
-                            </tbody>
-                            <tfoot>
-                              <tr>
-                                <td colspan="2">Fin du tableau</td>
-                              </tr>
-                            </tfoot>
-                        </table>
+                        &lt;table&gt;
+                            &lt;tfoot&gt;
+                                &lt;tr&gt;
+                                    &lt;td colspan="2"&gt;Fin du tableau&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tfoot&gt;
+                        &lt;/table&gt;
 
                         <table>
-                            <thead>
-                              <tr>
-                                <th>Nom</th>
-                                <th>Âge</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Jean</td>
-                                <td>30</td>
-                              </tr>
-                              <tr>
-                                <td>Marie</td>
-                                <td>25</td>
-                              </tr>
-                            </tbody>
                             <tfoot>
                               <tr>
                                 <td colspan="2">Fin du tableau</td>
@@ -696,60 +649,57 @@
                             </tfoot>
                         </table>
                     </pre>
-                </div>
-                <div id="miseEnFormeTableau">
-                    
                 </div>
                 <div id="exempleTableau">
+                    <h3>Exemple de tableau</h3>
                     <pre>
-                        <!DOCTYPE html>
-                        <html>
-                        <head>
-                        <title>Exemple de Tableau</title>
-                        <style>
-                            table {
-                            width: 100%;
-                            border-collapse: collapse;
-                            }
-                            th, td {
-                            border: 1px solid black;
-                            padding: 8px;
-                            text-align: left;
-                            }
-                            th {
-                            background-color: #f2f2f2;
-                            }
-                        </style>
-                        </head>
-                        <body>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Exemple de Tableau&lt;/title&gt;
+                            &lt;style&gt;
+                                table {
+                                width: 100%;
+                                border-collapse: collapse;
+                                }
+                                th, td {
+                                border: 1px solid black;
+                                padding: 8px;
+                                text-align: left;
+                                }
+                                th {
+                                background-color: #f2f2f2;
+                                }
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
 
-                        <table>
-                        <thead>
-                            <tr>
-                            <th>Nom</th>
-                            <th>Âge</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>Jean</td>
-                            <td>30</td>
-                            </tr>
-                            <tr>
-                            <td>Marie</td>
-                            <td>25</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                            <td colspan="2">Fin du tableau</td>
-                            </tr>
-                        </tfoot>
-                        </table>
+                            &lt;table&gt;
+                                &lt;thead&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;Nom&lt;/th&gt;
+                                        &lt;th&gt;Âge&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Jean&lt;/td&gt;
+                                        &lt;td&gt;30&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Marie&lt;/td&gt;
+                                        &lt;td&gt;25&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                                &lt;tfoot&gt;
+                                    &lt;tr&gt;
+                                        &lt;td colspan="2"&gt;Fin du tableau&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/tfoot&gt;
+                            &lt;/table&gt;
 
-                        </body>
-                        </html>
-
+                        &lt;/body&gt;
+                        &lt;/html&gt;
 
                         <!DOCTYPE html>
                         <html>

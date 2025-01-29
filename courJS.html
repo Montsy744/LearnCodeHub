@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LearnCodeHub-JavaScript</title>
+         
+        <!--description de la page-->
+        <meta charset="utf-8">
+        <meta name="author" content="Hugo Straseele">
+
+        <!--lien vers les page css-->
+        <link rel="stylesheet" type="text/css" href="./css/courJS.css">
+        
+        <!--lien vers le js-->
+        <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
+        <script src="./js/courJS.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html"><h1>LearnCodeHub</h1></a>
+            <nav>
+                <h1>HTML</h1>
+            </nav>
+            <div id="font">
+                <a href="./Acceuil.html"><i class="fa-solid fa-house fa-2x"></i></a>
+                <!--<p class="texte-cache">Acceuile</p>-->
+                <a href="https://discord.gg/wurwkyGq" target="_blank"><i class="fa-brands fa-discord fa-2x"></i></a>
+                <!--<p class="texte-cache">Forum</p>-->
+            </div>
+        </header>
+        <nav id="menu">
+            <h1>JavaScript</h1>
+            <ul id="ul1">
+                <li><a href="#introductionJS" class="underline-effect">Introduction au JS</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#baseJS" class="underline-effect">Les bases du JS</a></li>
+                </ul>
+                </li>
+                <li><a href="#DOM" class="underline-effect">DOM</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#whatADOM" class="underline-effect">qu'est ce que c'est ?</a></li>
+                    <li><a href="#selectionElement" class="underline-effect">Séléction des éléments</a></li>
+                    <li><a href="#navigationDuDOM" class="underline-effect">Naviguer dans le DOM</a></li>
+                    <li><a href="#manipulElement" class="underline-effect">Manipulation des éléments</a></li>
+                </ul>
+                </li>
+                <li><a href="#attributs" class="underline-effect">Les attributs HTML</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#attributHTML" class="underline-effect">Travailler avec les Attributs HTML</a></li>
+                    <li><a href="#exempleAttribut" class="underline-effect">Exemples</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#evenement" class="underline-effect">Les événement</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#ecouteurEvenement" class="underline-effect">Ecouteur d'événement</a></li>
+                    <li><a href="#manipulationEvenement" class="underline-effect">Manipulation des Evénements Avancée</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#fetch" class="underline-effect">Fetch</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#whatAPIFetch" class="underline-effect">Qu'est ce que l'API Fetch?</a></li>
+                    <li><a href="#utilisationAPIFetch" class="underline-effect">Utilisation de l'API Fetch</a></li>
+                    <li><a href="#ExempleGEt" class="underline-effect">Exemple Concret: Requête GET</a></li>
+                    <li><a href="#ExemplePOST" class="underline-effect">Exemple Concret: Requête POST</a></li>
+                    <li><a href="#erreure" class="underline-effect">Traitement des erreurs</a></li>
+                    <li><a href="#utilisationFetchAvancée" class="underline-effect">Utilisation avancée de Fetch</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            document.querySelectorAll('.grosTitre').forEach(button => {
+                button.addEventListener('click', function() {
+                    const ul2 = this.nextElementSibling;
+                    ul2.classList.toggle('open');
+                    const icon = this.querySelector('.rotate-icon');
+                    icon.classList.toggle('rotated');
+                });
+            });
+        </script>
+        <main>
+            <div id="#introductionJS">
+                <h1>Introduction au JavaScript</h1>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;JavaScript est souvent utilisé pour rendre les pages web interactives. Voici un exemple simple de code JavaScript :</p>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Exemple JavaScript&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;Bonjour, Monde !&lt;/h1&gt;
+                            &lt;button&gt; onclick="saluer()"&gt;Cliquez-moi&lt;/button&gt;
+
+                            &lt;script&gt;&gt;
+                                function saluer() {
+                                    alert('Bonjour à tous!');
+                                }
+                            &lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="./Apropos.html">a propos</a>
+                <a href="./MeContacter.html">Me contacter</a>
+                <!-- autres liens -->
+            </nav>
+        </footer>
+        <div id="leadModal" class="modal">
+            <div class="modalBloc">
+                <div class="modalIcon">
+                    <i class="fa-solid fa-computer fa-9x"></i>
+                </div>
+                <div class="modalText">
+                    <h4 class="modalTextTitle lobster-regular">Continuez la lecture</h4>
+                    <p class="modalTextParagraphe">Bienvenu sur notre cour dédier au JavaScript, nous vous conseillons d'avoir consulté les cours sur l'HTML et le CSS avant de vous lancez dans celui-ci</p>
+                </div>
+                <div class="modalBtn">
+                    <a href="#" id="btn">Je continue</a>
+                    <a href="./Acceuil.html">retour a l'aceuil</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px red;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #18243F;
+}
+@font-face {
+    font-family: 'Audiowide-Regular' ;
+    src: url('./../Audiowide-Regular.ttf');
+
+    font-family: 'code';
+    src: url('./../codeEcriture.ttf')
+}
+
+header {
+    margin-left: 20%;
+    background-color: #131D34;
+    color: white;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+  
+header nav h1 {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: 'Audiowide-Regular';   
+}
+
+  
+
+header a h1 {
+    color: white;
+    font-family: 'Audiowide-Regular';
+}
+header a{
+    text-decoration: none;
+}
+header #font i {
+    padding: 10px;
+    position: relative; 
+    display: inline-block;
+    color: white;
+}
+
+#menu{
+    background-color: #131D34;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    border-right: solid 3px #5F11E8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#menu h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Audiowide-Regular';
+}
+
+#menu #ul1 {
+    margin-left: 55px;
+    margin-top: 30px;
+    color: white;
+}
+
+#menu #ul1 li a{
+    color:#CD1E5E;
+    padding-right: 10px;
+}
+
+.underline-effect {
+    position: relative;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+  }
+  
+  .underline-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* La barre commence avec une largeur de 0 */
+    height: 2px;
+    background-color: #CD1E5E;
+    transition: width 0.3s ease-out; /* L'animation dure 2 secondes */
+  }
+  
+  .underline-effect:hover::after {
+    width: 95%; /* La barre prend toute la largeur du texte lorsque le lien est survolé */
+  }
+  
+
+.ul2 {
+    max-height: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.ul2.open {
+    max-height: 500px;
+}
+
+.ul2 li{
+    margin-top: 10px;
+}
+
+#menu #ul1 > li{
+    border-top: solid 1px #5F11E8;
+    padding: 10px;
+}
+
+#menu #ul1 li button {
+    background-color: #131D34;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease-out;
+}
+
+.rotate-icon.rotated {
+    transform: rotate(90deg);
+}
+.highlight {
+    background-color: yellow; /* Couleur de surlignage */
+    font-size: x-large;
+    color: #333;
+}
+
+main {
+    width: 70%;
+    height: 100%;
+    left: 25%;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+main {
+    animation: grow 1s;
+}
+  
+@keyframes grow {
+    0% { transform: scale(.2); }
+    100% { transform: scale(1); }
+}
+p {
+    font-size: large;
+    text-align: justify;
+}
+
+main div, main div div {
+    margin-bottom: 20px;
+}
+
+main>div>h2{
+    font-family: 'Audiowide-Regular';
+    font-size: x-large;
+}
+main div h3{
+    font-family: 'Audiowide-Regular';
+    font-size: large;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+main div h1{
+    font-size: x-large;
+    font-family: 'Audiowide-Regular';
+}
+
+pre{
+    background-color: #131D34;
+    border-radius: 10px;
+    border: solid 2px #CD1E5E;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'code';
+    
+}
+footer {
+    bottom: 0;
+    background-color: #333;
+    padding: 20px;
+    text-align: right;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+    margin: 10px
+}
+footer a:hover{
+    color: #CD1E5E;
+    text-decoration: underline;
+    transition: 0.5s;
+}
