@@ -11,9 +11,6 @@ body {
 @font-face {
     font-family: 'Audiowide-Regular' ;
     src: url('./../Audiowide-Regular.ttf');
-
-    font-family: 'code';
-    src: url('./../codeEcriture.ttf');
 }
 
 header {
@@ -249,6 +246,7 @@ pre{
   
   .modalTextTitle{
     font-size: 60px;
+    font-family: 'Audiowide-Regular';
   }
   .modalTextParagraphe{
     font-size: large;
@@ -271,4 +269,24 @@ footer a:hover{
     color: #CD1E5E;
     text-decoration: underline;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 500px){
+    main{
+        width: 95%;
+    }
+    #menu{
+        display: none;
+    }
+    header{
+        margin-left: 0;
+    }
+    .modalTextTitle {
+        font-size: 40px;
+    }
+    .modalBtn a{
+        display: block;
+        margin-bottom: 5%;
+    }
+    
 }

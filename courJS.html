@@ -10,6 +10,7 @@
 
         <!--lien vers les page css-->
         <link rel="stylesheet" type="text/css" href="./css/courJS.css">
+        <link rel="stylesheet" type="text/css" href="./css/courPourTel.css">
         
         <!--lien vers le js-->
         <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
@@ -323,10 +324,87 @@
                     </pre>
 
                 </div>
-                <div id=""></div>
-                <div id=""></div>
-                <div id=""></div>
-                <div id=""></div>
+                <div id="ExempleGEt">
+                    <h3>Exemple Concret: Requête GET</h3>
+                    <p>Voici un exemple de base pour récupérer des données d'un serveur avec une requête GET :</p>
+                    <pre>
+                        fetch('https://api.example.com/donnees')
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Erreur HTTP: ' + response.status);
+                            }
+                            return response.json(); // Convertit la réponse en JSON
+                        })
+                        .then(data => {
+                            console.log(data); // Utilise les données récupérées
+                        })
+                        .catch(error => {
+                            console.error('Erreur:', error); // Gère les erreurs
+                        });                        
+                    </pre>
+                    <p>Dans cet exemple, nous utilisons fetch() pour envoyer une requête GET à l'URL spécifiée. La méthode then() est utilisée pour traiter la réponse, et catch() pour gérer les erreurs.</p>
+                </div>
+                <div id="ExemplePOST">
+                    <h3>Exemple Concret: Requête POST</h3>
+                    <p>Pour envoyer des données à un serveur, vous pouvez utiliser une requête POST :</p>
+                    <pre>
+                        fetch('https://api.example.com/donnees', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json' // Spécifie le type de contenu
+                            },
+                            body: JSON.stringify({
+                                nom: 'Jean',
+                                age: 30
+                            }) // Convertit les données en JSON
+                        })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Erreur HTTP: ' + response.status);
+                            }
+                            return response.json(); // Convertit la réponse en JSON
+                        })
+                        .then(data => {
+                            console.log(data); // Utilise les données de la réponse
+                        })
+                        .catch(error => {
+                            console.error('Erreur:', error); // Gère les erreurs
+                        });                        
+                    </pre>
+                    <p>Le format JSON (JavaScript Object Notation) est une méthode légère et lisible par les humains pour structurer les données. Il est principalement utilisé pour transmettre des données entre un serveur et un client dans les applications web. Voici à quoi cela ressemble:</p>
+                    <pre>
+                        {
+                            "nom": "Jean",
+                            "âge": 30,
+                            "ville": "Paris"
+                        }                          
+                    </pre>
+                    <p>Comme vous pouvez le voir, il utilise des paires clé/valeur pour organiser les informations. Par exemple, dans cet exemple, nom, âge, et ville sont des clés, et leurs valeurs correspondantes sont Jean, 30, et Paris. JSON est largement utilisé en raison de sa simplicité et de sa compatibilité avec de nombreux langages de programmation.</p>
+                </div>
+                <div id="erreure">
+                    <h3>Traitement des erreurs</h3>
+                    <p>Lorsque vous travaillez avec fetch, il est important de gérer les erreurs correctement. Par exemple, une requête pourrait échouer en raison de problèmes de réseau ou si le serveur retourne un code de statut HTTP qui indique une erreur.</p>
+                </div>
+                <div id="utilisationFetchAvancée">
+                    <h3>Utilisation avancée de Fetch</h3>
+                    <p>Voici un exemple plus avancé utilisant async et await pour rendre le code encore plus lisible :</p>
+                    <pre>
+                        async function fetchData() {
+                            try {
+                                let response = await fetch('https://api.example.com/donnees');
+                                if (!response.ok) {
+                                    throw new Error('Erreur HTTP: ' + response.status);
+                                }
+                                let data = await response.json();
+                                console.log(data);
+                            } catch (error) {
+                                console.error('Erreur:', error);
+                            }
+                        }
+                        fetchData();
+                    </pre>
+                    <p>Dans cet exemple, async et await sont utilisés pour gérer les opérations asynchrones de manière synchronisée, ce qui rend le code plus facile à lire et à comprendre.</p>
+                </div>
             </div>
         </main>
         <footer>

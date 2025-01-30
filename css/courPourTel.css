@@ -1,0 +1,19 @@
+@media screen and (max-width: 500px){
+    main{
+        width: 90%;
+    }
+    #menu{
+        display: none;
+    }
+    header{
+        margin-left: 0;
+    }
+    .modalTextTitle {
+        font-size: 40px;
+    }
+    .modalBtn a{
+        display: block;
+        margin-bottom: 5%;
+    }
+    
+}
