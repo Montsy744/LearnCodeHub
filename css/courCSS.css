@@ -136,10 +136,8 @@ header #font i {
 .rotate-icon.rotated {
     transform: rotate(90deg);
 }
-
 main {
     width: 70%;
-    height: 100%;
     left: 25%;
     margin-left: 25%;
     margin-top: 20px;
@@ -174,15 +172,7 @@ p {
 main div, main div div {
     margin-bottom: 20px;
 }
-#base p a {
-    color: #CD1E5E;
-}
-#base p a:hover {
-    color:#5F11E8;
-    font-size: x-large;
-    transition-duration: 1s;
-}
- main>div>h2{
+main>div>div>h2{
     font-family: 'Audiowide-Regular';
     font-size: x-large;
 }

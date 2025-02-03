@@ -1,0 +1,378 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title><LearnCodeHub-CSS></LearnCodeHub-CSS></title>
+         
+        <!--description de la page-->
+        <meta charset="utf-8">
+        <meta name="author" content="Hugo Straseele">
+
+        <!--lien vers les page css-->
+        <link rel="stylesheet" type="text/css" href="./css/courCSS.css">
+        
+        <!--lien vers le js-->
+        <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html"><h1>LearnCodeHub</h1></a>
+            <nav>
+                <h1>CSS</h1>
+            </nav>
+            <div id="font">
+                <a href="./Acceuil.html"><i class="fa-solid fa-house fa-2x"></i></a>
+                <!--<p class="texte-cache">Acceuile</p>-->
+                <a href="https://discord.gg/wurwkyGq" target="_blank"><i class="fa-brands fa-discord fa-2x"></i></a>
+                <!--<p class="texte-cache">Forum</p>-->
+            </div>
+        </header>
+        <nav id="menu">
+            <h1>CSS</h1>
+            <ul id="ul1">
+                <li><a href="#introCSS" class="underline-effect">Introduction au langage</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#syntaxeDeBase" class="underline-effect">La syntaxe de base</a></li>
+                    <li><a href="#CSSDansHTML" class="underline-effect">Le CSS dans un Document HTML</a></li>
+                    <li><a href="#selecteurDeBase" class="underline-effect">Les selecteurs de base</a></li>
+                    <li><a href="#proprieterCSSDeBase" class="underline-effect">les propriétés de base</a></li>
+                    <li><a href="#selecteurGroupe&Combine" class="underline-effect">Sélecteurs de Groupe et Combinés</a></li>
+                </ul>
+                </li>
+                <li><a href="#CSSAvance" class="underline-effect">Concepts Avancés du CSS</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#selecteurAvancé" class="underline-effect">Concepts Avancés de Sélecteurs CSS</a></li>
+                    <li><a href="#flexbox" class="underline-effect">Mise en Page avec Flexbox</a></li>
+                    <li><a href="#grid" class="underline-effect">Mise en Page avec Grid Layout</a></li>
+                    <li><a href="#variableCSS" class="underline-effect">Variables CSS (Custom Properties)</a></li>
+                    <li><a href="#PréprocesseursCSS" class="underline-effect">Préprocesseurs CSS</a></li>
+                    <li><a href="#TechniquesResponsivesAvancées" class="underline-effect">Techniques Responsives Avancées</a></li>
+                </ul>
+                </li>
+                <li><a href="#AnimationTransition" class="underline-effect">Animations et Transitions</a><button class="grosTitre"><i class=" fa-solid fa-arrow-right rotate-icon"></i></button>
+                <ul class="ul2">
+                    <li><a href="#transition" class="underline-effect">Les Transitions CSS</a></li>
+                    <li><a href="#animation" class="underline-effect">Les Animations CSS</a></li>
+                    <li><a href="#diffTransitionAnimation" class="underline-effect">Différences clés entre les Transitions et les Animations :</a></li>
+                    <li><a href="#exempleCombiné" class="underline-effect">Exemples combinés (Transition + Animation)</a></li>
+                </ul>
+                <li><a href="#lienUtile" class="underline-effect">Liens utiles</a></li>
+            </ul>
+        </nav>
+        <script>
+            document.querySelectorAll('.grosTitre').forEach(button => {
+                button.addEventListener('click', function() {
+                    const ul2 = this.nextElementSibling;
+                    ul2.classList.toggle('open');
+                    const icon = this.querySelector('.rotate-icon');
+                    icon.classList.toggle('rotated');
+                });
+            });
+        </script>
+        <main>
+            <div id="introCSS">
+                <h1>Introduction au CSS</h1>
+                <p>CSS est une technologie utilisée pour ajouter du style aux pages web. Il permet de contrôler la mise en page, les couleurs, les polices, les espaces, et bien plus encore. CSS est séparé du HTML, ce qui permet de maintenir un code HTML propre et de styler plusieurs pages avec un seul fichier CSS.</p>
+                <div id="syntaxeDeBase">
+                    <h2>Syntaxe de base</h2>
+                    <p>Un fichier CSS est composé de règles. Chaque règle a deux parties principales : un sélecteur et une déclaration. Une déclaration comprend une propriété et une valeur.</p>
+                    <pre>
+                        sélecteur {
+                            propriété: valeur;
+                        }                        
+                    </pre>
+                    <p>Exemple :</p>
+                    <pre>
+                        h1 {
+                            color: blue;
+                            font-size: 20px;
+                        }                        
+                    </pre>
+                </div>
+                <div id="CSSDansHTML">
+                    <h2>Inclusion du CSS dans un Document HTML</h2>
+                    <p>Feuille de Style Interne :</p>
+                    <pre>
+                        &lt;style&gt;
+                            p {
+                              color: blue;
+                            }
+                        &lt;/style&gt;                       
+                    </pre>
+                    <p>Explication : Cet exemple montre comment ajouter du CSS directement dans un document HTML à l'aide de la balise &lt;style&gt;. Ici, tous les paragraphes auront leur texte en bleu.</p>
+                    <p>Feuille de Style Externe :</p>
+                    <pre>
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    </pre>
+                    <p>Explication : Vous pouvez également inclure une feuille de style externe en utilisant la balise &lt;link&gt;. Cela rend votre code plus propre et permet de réutiliser les styles dans plusieurs documents.</p>
+                    <p>Attribut de Style En-Ligne :</p>
+                    <pre>
+                        &lt;p style="color: green;"&gt;Ce texte est vert.&lt;/p&gt;
+                    </pre>
+                    <p>Explication : L'attribut style permet d'ajouter du CSS directement dans une balise HTML. Dans cet exemple, le texte du paragraphe sera vert. </p>
+                </div>
+                <div id="selecteurDeBase">
+                    <h2>Sélecteurs</h2>
+                    <p>Les sélecteurs permettent de cibler des éléments HTML spécifiques à styler.</p>
+                    <h3>Sélecteurs de base</h3>
+                    <p><span class="highlight">Sélecteur de type :</span> cible tous les éléments du même type.</p>
+                    <pre>
+                        p {
+                            color: green;
+                        }
+                    </pre>
+                    <p><span class="highlight">Sélecteur de classe :</span> cible tous les éléments avec une certaine classe. Utilisez un point (.) avant le nom de la classe.</p>
+                    <pre>
+                        .maClasse {
+                            color: red;
+                        }                        
+                    </pre>
+                    <p><span class="highlight">Sélecteur d'identifiant :</span> cible un élément avec un certain identifiant. Utilisez le signe dièse (#) avant l'identifiant.</p>
+                    <pre>
+                        #monID {
+                            color: purple;
+                        }                        
+                    </pre>
+
+                </div>
+                <div id="proprieterCSSDeBase">
+                    <h2>Propriétés CSS communes</h2>
+                    <h3>Couleurs et arrière-plans</h3>
+                    <p><span class="highlight">color:</span> Définit la couleur du texte.</p>
+                    <pre>
+                        p {
+                            color: blue;
+                        }                       
+                    </pre>
+                    <p><span class="highlight">background-color:</span> Définit la couleur de l'arrière-plan.</p>
+                    <pre>
+                        div {
+                            background-color: yellow;
+                        }                        
+                    </pre>
+                    <h3>Polices et texte</h3>
+                    <p><span class="highlight">font-family:</span> Définit la police du texte.</p>
+                    <pre>
+                        h1 {
+                            font-family: Arial, sans-serif;
+                        }                        
+                    </pre>
+                    <p><span class="highlight">font-size:</span> Définit la taille du texte.</p>
+                    <pre>
+                        p {
+                            font-size: 16px;
+                        }                        
+                    </pre>
+                    <p><span class="highlight">font-weight:</span> Définit la graisse de la police (normal, bold, etc.).</p>
+                    <pre>
+                        h2 {
+                            font-weight: bold;
+                        }                        
+                    </pre>
+                    <h3>Boîte de modèle</h3>
+                    <p><span class="highlight">width et height:</span> Définit la largeur et la hauteur d'un élément.</p>
+                    <pre>
+                        div {
+                            width: 100px;
+                            height: 50px;
+                        }
+                    </pre>
+                    <p><span class="highlight">margin:</span> Définit la marge extérieure d'un élément.</p>
+                    <pre>
+                        p {
+                            margin: 20px;
+                        }                        
+                    </pre>
+                    <p><span class="highlight">padding:</span> Définit la marge intérieure d'un élément.</p>
+                    <pre>
+                        div {
+                            padding: 10px;
+                        }                      
+                    </pre>
+                    <p><span class="highlight">border :</span> Définit la bordure d'un élément.</p>
+                    <pre>
+                        img {
+                            border: 1px solid
+                        }                        
+                    </pre>
+                </div>
+                <div id="selecteurGroupe&Combine">
+                    <h3>Sélecteurs de Groupe et Combinés</h3>
+                    <p><span class="highlight">Sélecteurs de Groupe:</span></p>
+                    <pre>
+                        h1, h2, h3 {
+                            color: darkred;
+                        }
+                    </pre>
+                    <p>Explication : Ce sélecteur de groupe cible toutes les balises &lt;h1&gt;, &lt;h2&gt;, et &lt;h3&gt; et change leur couleur de texte en rouge foncé.</p>
+                    <p><span class="highlight">Sélecteurs Descendants:</span></p>
+                    <pre>
+                        div p {
+                            color: green;
+                        }                       
+                    </pre>
+                    <p>Explication : Ce sélecteur descendant cible tous les paragraphes <p> qui sont des enfants directs ou indirects des éléments &lt;div&gt; et change leur couleur de texte en vert.</p>
+                    
+                </div>
+            </div>
+            <div id="CSSAvance">
+                <h1>Concepts Avancés du CSS</h1>
+                <div id="selecteurAvancé">
+                    <h2>Concepts Avancés de Sélecteurs CSS</h2>
+                    <h3>Sélecteurs d'Attributs</h3>
+                    <p>[attr=value]: Sélectionne les éléments dont l'attribut attr a exactement la valeur value.</p>
+                    <pre>
+                        input[type="text"] {
+                            border: 1px solid #000;
+                        }                        
+                    </pre>
+                    <p>[attr~=value]: Sélectionne les éléments dont l'attribut attr contient la valeur value en tant que mot unique.</p>
+                    <pre>
+                        [class~="primary"] {
+                            color: blue;
+                        }                        
+                    </pre>
+                    <p>[attr|=value]: Sélectionne les éléments dont l'attribut attr a exactement la valeur value ou commence par value suivi d'un tiret (-).</p>
+                    <pre>
+                        a[lang|="en"] {
+                            font-style: italic;
+                        }                        
+                    </pre>
+                    <p>[attr^=value]: Sélectionne les éléments dont l'attribut attr commence par la valeur value.</p>
+                    <pre>
+                        a[href^="https"] {
+                            color: green;
+                        }                        
+                    </pre>
+                    <p>[attr$=value]: Sélectionne les éléments dont l'attribut attr se termine par la valeur value.</p>
+                    <pre>
+                        img[src$=".jpg"] {
+                            border: 1px solid #ccc;
+                        }                        
+                    </pre>
+                    <p>[attr=value]:* Sélectionne les éléments dont l'attribut attr contient la valeur value.</p>
+                    <pre>
+                        a[href*="example"] {
+                            background-color: yellow;
+                        }                        
+                    </pre>
+                    <h3>Pseudo-Classes et Pseudo-Éléments Avancés</h3>
+                    <p>:nth-child(n): Sélectionne le nième enfant de son parent.</p>
+                    <pre>
+                        li:nth-child(2) {
+                            color: red;
+                        }                        
+                    </pre>
+                    <p>:nth-of-type(n): Sélectionne le nième enfant de son parent, parmi les éléments du même type.</p>
+                    <pre>
+                        p:nth-of-type(2) {
+                            font-weight: bold;
+                        }                        
+                    </pre>
+                    <p>:not(selector): Sélectionne les éléments qui ne correspondent pas au sélecteur.</p>
+                    <pre>
+                        p:not(.highlight) {
+                            color: gray;
+                        }                        
+                    </pre>
+                    <p>::before et ::after: Ajoute du contenu avant ou après le contenu d'un élément.</p>
+                    <pre>
+                        p::before {
+                            content: "Note: ";
+                            font-weight: bold;
+                        }
+                        p::after {
+                            content: " [fin]";
+                        }                        
+                    </pre>
+                </div>
+                <div id="flexbox">
+                    <h2>Mise en Page avec Flexbox</h2>
+                    <h3>Bases de Flexbox</h3>
+                    <p><span class="highlight">Conteneur flex:</span> Crée un conteneur flexible (display: flex).</p>
+                    <pre>
+                        .container {
+                            display: flex;
+                        }
+                    </pre>
+                    <p><span class="highlight">Axe principal et axe transversal:</span> Concepts de direction dans un conteneur flex.</p>
+                    <pre>
+                        .container {
+                            flex-direction: row;     /* axe principal horizontal */
+                            flex-direction: column;  /* axe principal vertical */
+                        }
+                    </pre>
+                    <h3>Alignement et Justification</h3>
+                    <p><span class="highlight">Alignement des éléments sur l'axe transversal:</span></p>
+                    <pre>
+                        .container {
+                            align-items: center;
+                            align-items: flex-start;
+                            align-items: flex-end;
+                        }
+                    </pre>
+                    <p><span class="highlight">Justification des éléments sur l'axe principal:</span></p>
+                    <pre>
+                        .container {
+                            justify-content: center;
+                            justify-content: space-between;
+                            justify-content: space-around;
+                        }
+                    </pre>
+                    <h3>Ordre et Orientation</h3>
+                    <p><span class="highlight">Ordre des éléments:</span></p>
+                    <pre>
+                        .item {
+                            order: 2;
+                        }
+                    </pre>
+                    <p><span class="highlight">Orientation du conteneur:</span></p>
+                    <pre>
+                        .container {
+                            flex-wrap: wrap;
+                            flex-direction: row-reverse;
+                        }
+                    </pre>
+                </div>
+                <div id="grid">
+
+                </div>
+                <div id="variableCSS">
+
+                </div>
+                <div id="PréprocesseursCSS">
+
+                </div>
+                <div id="TechniquesResponsivesAvancées"></div>
+            </div>
+            <div id="AnimationTransition">
+                <div id="transition">
+
+                </div>
+                <div id="animation">
+
+                </div>
+                <div id="diffTransitionAnimation">
+
+                </div>
+                <div id="exempleCombiné"
+            </div>
+            </div>
+            <div id="lienUtile">
+                <h2>Quelques liens utiles</h2>
+                <p>Je précise que 80% du temps un developpeur fait des recherches pour ses projets et que seulement 20% du temps il code. Je vous invite donc a chercher sur internet quand vous bloquer sur un problème. Pour vous aidez voici quelque liens qui pourront vous être utiles :</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">Documentation MDN</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank">Validateur W3C</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="./Apropos.html">a propos</a>
+                <a href="./MeContacter.html">Me contacter</a>
+                <!-- autres liens -->
+            </nav>
+        </footer>
+        
+    </body>
+</html>
