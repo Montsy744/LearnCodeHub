@@ -334,9 +334,58 @@
                     </pre>
                 </div>
                 <div id="grid">
-
+                    <h2>Mise en Page avec Grid Layout</h2>
+                    <h3>Concepts de Base de Grid Layout</h3>
+                    <p>Définir une grille:</p>
+                    <pre>
+                        .grid-container {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-rows: auto;
+                        }                        
+                    </pre>
+                    <h3>Positionnement des Éléments</h3>
+                    <p>Définir les colonnes et les lignes des éléments:</p>
+                    <pre>
+                        .item {
+                            grid-column: 1 / 3;
+                            grid-row: 2 / 4;
+                        }                        
+                    </pre>
+                    <h3>Alignement et Espacement</h3>
+                    <p>Aligner les éléments dans la grille:</p>
+                    <pre>
+                        .grid-container {
+                            justify-items: center;
+                            align-items: stretch;
+                        }                        
+                    </pre>
                 </div>
                 <div id="variableCSS">
+                    <h2>Variables CSS (Custom Properties)</h2>
+                    <h3>Déclaration et Utilisation des Variables</h3>
+                    <p>Déclarer une variable:</p>
+                    <pre>
+                        :root {
+                            --main-color: #3498db;
+                        }
+                    </pre>
+                    <p>Utiliser une variable:</p>
+                    <pre>
+                        .element {
+                            color: var(--main-color);
+                          }                          
+                    </pre>
+                    <h3>Scope et Héritage</h3>
+                    <p>Utiliser des variables dans différents contextes:</p>
+                    <pre>
+                        .container {
+                            --main-color: #e74c3c;
+                        }
+                          .item {
+                            color: var(--main-color);
+                        }
+                    </pre>
 
                 </div>
                 <div id="PréprocesseursCSS">
